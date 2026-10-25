@@ -549,14 +549,8 @@
           "id": "curious",
           "title": "Lots to discover",
           "summary": "You are in a great place to be curious. Not knowing the answer is simply an invitation to ask. People change, so even long-term partners have things to learn.",
-          "strengths": [
-            "Open to learning",
-            "Room for lovely surprises"
-          ],
-          "growth": [
-            "Ask without pressure",
-            "Avoid treating gaps as failure"
-          ],
+          "strengths": ["Open to learning", "Room for lovely surprises"],
+          "growth": ["Ask without pressure", "Avoid treating gaps as failure"],
           "tryThisWeek": "Pick two prompts and ask them over dinner, with no preparation."
         },
         {
@@ -577,10 +571,7 @@
           "id": "well-mapped",
           "title": "Well-mapped, keep updating",
           "summary": "You feel confident about your partner's inner world. Confidence is not accuracy, so check with them, since people change. Keep asking fresh questions.",
-          "strengths": [
-            "Attentive and curious",
-            "Probably a good listener"
-          ],
+          "strengths": ["Attentive and curious", "Probably a good listener"],
           "growth": [
             "Check you are not relying on old information",
             "Ask about hopes, not just facts"
@@ -698,9 +689,7 @@
           "id": "nonlove",
           "title": "Quiet right now",
           "summary": "None of the three feels strong at the moment. That might be a busy or tough period, or the relationship is in a different place. It is not a verdict. Consider what you need, and if it feels heavy, talk with someone you trust or a counselor.",
-          "strengths": [
-            "Honest self-awareness"
-          ],
+          "strengths": ["Honest self-awareness"],
           "growth": [
             "Explore what changed",
             "Talk with your partner or a professional"
@@ -711,10 +700,7 @@
           "id": "friendship",
           "title": "Friendship (intimacy)",
           "summary": "Closeness is your strongest side: warm, trusting and understood. Passion and commitment feel lower right now. That is a good base, and many couples grow from here.",
-          "strengths": [
-            "Trust and ease",
-            "Deep understanding"
-          ],
+          "strengths": ["Trust and ease", "Deep understanding"],
           "growth": [
             "Consider whether you want more romance or clearer commitment",
             "Talk openly about what you each want"
@@ -725,10 +711,7 @@
           "id": "infatuation",
           "title": "Infatuation (passion)",
           "summary": "Passion is strong while closeness and commitment feel lower. That is typical early on. Time and openness can turn excitement into intimacy.",
-          "strengths": [
-            "Excitement and energy",
-            "Strong attraction"
-          ],
+          "strengths": ["Excitement and energy", "Strong attraction"],
           "growth": [
             "Build closeness through sharing",
             "Talk about what each of you wants over time"
@@ -739,9 +722,7 @@
           "id": "empty",
           "title": "Commitment (empty love)",
           "summary": "Commitment is present, but closeness and passion feel lower right now. That can happen in long or busy relationships, and it can be rekindled with attention. It may also be a sign to reflect on what you want.",
-          "strengths": [
-            "Dedicated and steady"
-          ],
+          "strengths": ["Dedicated and steady"],
           "growth": [
             "Rebuild closeness through small rituals",
             "Consider couples support if you feel stuck"
@@ -752,10 +733,7 @@
           "id": "romantic",
           "title": "Romantic (intimacy and passion)",
           "summary": "You feel both close and drawn to each other, with commitment feeling less settled. That is common early on. Talking about where you are heading can help.",
-          "strengths": [
-            "Warmth and excitement",
-            "Strong emotional connection"
-          ],
+          "strengths": ["Warmth and excitement", "Strong emotional connection"],
           "growth": [
             "Discuss expectations and future",
             "Be patient with uncertainty"
@@ -766,23 +744,15 @@
           "id": "companionate",
           "title": "Companionate (intimacy and commitment)",
           "summary": "You feel close and committed, with passion quieter. Many long-term relationships look like this, and it can be warm and enduring. If you want more spark, novelty and touch can help.",
-          "strengths": [
-            "Deep trust and stability",
-            "Strong partnership"
-          ],
-          "growth": [
-            "Keep romance on purpose",
-            "Try something new together"
-          ],
+          "strengths": ["Deep trust and stability", "Strong partnership"],
+          "growth": ["Keep romance on purpose", "Try something new together"],
           "tryThisWeek": "Plan something new together, like a different restaurant, route or game."
         },
         {
           "id": "fatuous",
           "title": "Whirlwind (passion and commitment)",
           "summary": "Passion and commitment feel strong, while closeness has room to grow. That can happen when things move fast. Time spent sharing and listening builds the middle part.",
-          "strengths": [
-            "Energy and dedication"
-          ],
+          "strengths": ["Energy and dedication"],
           "growth": [
             "Invest in conversation and understanding",
             "Slow down to know each other"
@@ -1295,10 +1265,7 @@
           "id": "repair",
           "title": "Repair-forward",
           "summary": "Your answers lean toward calm, repair-minded responses. You often name feelings, take breaks and look for solutions. Even people who are good at this slip when tired, and that is normal. Keep going.",
-          "strengths": [
-            "Gentle start-ups",
-            "Willing to repair and pause"
-          ],
+          "strengths": ["Gentle start-ups", "Willing to repair and pause"],
           "growth": [
             "Stay patient with a partner who is still learning",
             "Notice when you are flooded and take breaks"
@@ -1351,10 +1318,7 @@
           "id": "stonewalling",
           "title": "Tends toward stonewalling",
           "summary": "When overwhelmed, you may go quiet or withdraw. Often this is your body being flooded, not indifference. The antidote is physiological self-soothing: take a clear break with a return time, then come back.",
-          "strengths": [
-            "You avoid saying hurtful things",
-            "You protect calm"
-          ],
+          "strengths": ["You avoid saying hurtful things", "You protect calm"],
           "growth": [
             "Say you need a break, and when you will return",
             "Return and re-engage after soothing"
@@ -1512,10 +1476,7 @@
           "id": "eros",
           "title": "Eros: romantic and passionate",
           "summary": "You value chemistry, intensity and romance, and want love to feel alive. That brings energy and warmth. Intense feelings can burn bright, so pair them with friendship and patience.",
-          "strengths": [
-            "Passionate and expressive",
-            "Brings excitement"
-          ],
+          "strengths": ["Passionate and expressive", "Brings excitement"],
           "growth": [
             "Build friendship alongside the spark",
             "Let love settle when excitement dips"
@@ -1526,10 +1487,7 @@
           "id": "ludus",
           "title": "Ludus: playful and light",
           "summary": "You enjoy love as playful and free, and prefer not to rush into heavy commitment. Lightness brings joy. In longer relationships, being clear about what you want helps your partner feel secure.",
-          "strengths": [
-            "Fun, flirty and easy-going",
-            "Values independence"
-          ],
+          "strengths": ["Fun, flirty and easy-going", "Values independence"],
           "growth": [
             "Be clear about your intentions",
             "Let in some depth when you are ready"
@@ -1540,10 +1498,7 @@
           "id": "storge",
           "title": "Storge: friendship-based",
           "summary": "You see love as a steady friendship that grows over time. This tends to be a stable, comfortable foundation. Keep some novelty so comfort does not turn into routine.",
-          "strengths": [
-            "Loyal and dependable",
-            "Builds trust slowly"
-          ],
+          "strengths": ["Loyal and dependable", "Builds trust slowly"],
           "growth": [
             "Add novelty to stay lively",
             "Voice affection, not just assume it"
@@ -1582,10 +1537,7 @@
           "id": "agape",
           "title": "Agape: giving and selfless",
           "summary": "You love by giving and caring, with a gentle, generous attitude. That is a precious quality. Look after your own needs too, because healthy giving is chosen, not drained.",
-          "strengths": [
-            "Generous and kind",
-            "Puts care into action"
-          ],
+          "strengths": ["Generous and kind", "Puts care into action"],
           "growth": [
             "Make sure your needs are heard",
             "Receive as well as give"

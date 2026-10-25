@@ -64,6 +64,14 @@ function numRecord(v: unknown): v is Record<string, number> {
   );
 }
 
+function strRecord(v: unknown): v is Record<string, string> {
+  return (
+    isObj(v) &&
+    Object.keys(v).length <= 500 &&
+    Object.entries(v).every(([k, s]) => k.length <= 100 && isStr(s, 2000))
+  );
+}
+
 function fail(error: string): ValidateResult {
   return { ok: false, error };
 }
@@ -155,7 +163,8 @@ export function validateBackup(input: unknown): ValidateResult {
       !isStr(r.outcomeId, 100) ||
       !plausible(r.at) ||
       !numRecord(r.answers) ||
-      !numRecord(r.scores)
+      !numRecord(r.scores) ||
+      (r.texts !== undefined && !strRecord(r.texts))
     ) {
       return fail(`Quiz result ${i + 1} isn't readable.`);
     }
@@ -165,6 +174,9 @@ export function validateBackup(input: unknown): ValidateResult {
       at: r.at,
       answers: r.answers,
       scores: r.scores,
+      ...(r.texts !== undefined && {
+        texts: r.texts as Record<string, string>,
+      }),
     });
   }
   return {

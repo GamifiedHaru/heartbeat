@@ -74,14 +74,15 @@ self.addEventListener("fetch", (event) => {
   if (u.origin !== self.location.origin || !req.url.startsWith(SCOPE)) return;
 
   if (req.mode === "navigate") {
+    // Cache-first: the shell for this version is immutable, so launches are
+    // instant even on a weak signal. New versions arrive via the SW update.
     event.respondWith(
-      fetch(req).catch(async () => {
-        const cache = await caches.open(VERSION);
-        return (
+      caches.open(VERSION).then(async (cache) => {
+        const hit =
           (await cache.match(req, { ignoreSearch: true })) ||
-          (await cache.match(url("./"))) ||
-          Response.error()
-        );
+          (await cache.match(url("./")));
+        if (hit) return hit;
+        return fetch(req).catch(() => Response.error());
       }),
     );
     return;

@@ -20,6 +20,8 @@ export interface QuizResult {
   answers: Record<string, number>;
   outcomeId: string;
   scores: Record<string, number>;
+  /** Free-text answers (love map). */
+  texts?: Record<string, string>;
 }
 
 export interface Settings {
