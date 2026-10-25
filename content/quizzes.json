@@ -1,0 +1,1598 @@
+[
+  {
+    "id": "love-expression",
+    "title": "How you show & feel love",
+    "subtitle": "Your preferences for giving and receiving affection, as a conversation starter",
+    "minutes": 4,
+    "caveat": "This is a reflection tool, not a scientific test. Research (Impett, Park & Muise, 2024) found little evidence that people have one fixed 'love language', that there are exactly five, or that matching your partner's language raises satisfaction. Most people value all of these. What does help is noticing what feels good right now and asking your partner about theirs. Treat the results as preferences today, not a type.",
+    "concept": "Preferences for expressing and receiving love (Five Love Languages framing, with caveats)",
+    "sources": [
+      {
+        "cite": "Impett, Park & Muise (2024). Popular psychology through a scientific lens: Evaluating love languages from a relationship science perspective. Current Directions in Psychological Science, 33(2), 87-92.",
+        "url": "https://doi.org/10.1177/09637214231217663"
+      },
+      {
+        "cite": "Egbert & Polk (2006). Speaking the language of relational maintenance: A validity test of Chapman's (1992) five love languages. Communication Research Reports, 23(1), 19-26.",
+        "url": "https://doi.org/10.1080/17464090500535822"
+      }
+    ],
+    "scale": {
+      "type": "likert",
+      "min": 1,
+      "max": 7,
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Slightly disagree",
+        "Neutral",
+        "Slightly agree",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "items": [
+      {
+        "id": "awords1",
+        "text": "It means a lot when my partner tells me, in words, what they appreciate about me.",
+        "dimension": "words",
+        "reverse": false
+      },
+      {
+        "id": "awords2",
+        "text": "I like hearing 'I love you' or a kind note, even if nothing else is happening.",
+        "dimension": "words",
+        "reverse": false
+      },
+      {
+        "id": "awords3",
+        "text": "Encouraging words from my partner can change my whole day.",
+        "dimension": "words",
+        "reverse": false
+      },
+      {
+        "id": "atime1",
+        "text": "I feel closest when we are doing something together with our full attention.",
+        "dimension": "time",
+        "reverse": false
+      },
+      {
+        "id": "atime2",
+        "text": "An unhurried evening with just the two of us beats almost any present.",
+        "dimension": "time",
+        "reverse": false
+      },
+      {
+        "id": "atime3",
+        "text": "I notice when my partner puts their phone away to be with me.",
+        "dimension": "time",
+        "reverse": false
+      },
+      {
+        "id": "aservice1",
+        "text": "When my partner takes a task off my plate, I feel cared for.",
+        "dimension": "service",
+        "reverse": false
+      },
+      {
+        "id": "aservice2",
+        "text": "Helping each other with the everyday load says 'I love you' to me.",
+        "dimension": "service",
+        "reverse": false
+      },
+      {
+        "id": "aservice3",
+        "text": "I feel loved when my partner notices what I need done and just does it.",
+        "dimension": "service",
+        "reverse": false
+      },
+      {
+        "id": "agifts1",
+        "text": "A small, thoughtful surprise that shows my partner was thinking of me makes me happy.",
+        "dimension": "gifts",
+        "reverse": false
+      },
+      {
+        "id": "agifts2",
+        "text": "I treasure keepsakes that remind me of moments we shared.",
+        "dimension": "gifts",
+        "reverse": false
+      },
+      {
+        "id": "agifts3",
+        "text": "I enjoy choosing a little something that I know will make my partner smile.",
+        "dimension": "gifts",
+        "reverse": false
+      },
+      {
+        "id": "atouch1",
+        "text": "Hugs, hand-holding or a cuddle are one of my favourite ways to feel connected.",
+        "dimension": "touch",
+        "reverse": false
+      },
+      {
+        "id": "atouch2",
+        "text": "I feel reassured by physical closeness when things are tense or hard.",
+        "dimension": "touch",
+        "reverse": false
+      },
+      {
+        "id": "atouch3",
+        "text": "A casual touch on the shoulder or back says a lot to me.",
+        "dimension": "touch",
+        "reverse": false
+      }
+    ],
+    "results": {
+      "method": "Likert 1-7, no reverse items. Compute the mean of the 3 items per dimension (words, time, service, gifts, touch). Let max and min be the highest and lowest dimension means. If (max - min) < 1.0, return outcome 'balanced'. Otherwise return the outcome for every dimension whose mean is within 0.34 of max, in order of mean (descending), capped at 2 outcomes. Always display all five means as a bar chart, labelled as 'preferences today'. Never show a single 'your love language is...' label.",
+      "outcomes": [
+        {
+          "id": "words",
+          "title": "Words feel warm to you",
+          "summary": "Right now, kind and affectionate words land strongly for you. Hearing what your partner values, in their own voice or on a note, helps you feel close. That is a preference for how affection is expressed, and it can change.",
+          "strengths": [
+            "You notice and give verbal appreciation easily",
+            "You can brighten a day with a short message"
+          ],
+          "growth": [
+            "Check that actions, not only words, are also seen as love",
+            "Tell your partner which words help; they cannot guess"
+          ],
+          "tryThisWeek": "Leave one specific, kind note where they will find it, and ask what words they like to hear."
+        },
+        {
+          "id": "time",
+          "title": "Shared attention feels warm to you",
+          "summary": "You tend to feel closest when you share undivided time. Presence, with phones away, may say more to you than gifts or words. Partners with different preferences may need you to say what counts as quality time.",
+          "strengths": [
+            "You make people feel truly seen",
+            "You protect time for the relationship"
+          ],
+          "growth": [
+            "Explain that quiet or short time together still counts",
+            "Notice other ways your partner shows care"
+          ],
+          "tryThisWeek": "Plan thirty minutes together with phones in another room, and let them choose the activity."
+        },
+        {
+          "id": "service",
+          "title": "Helpful acts feel warm to you",
+          "summary": "You tend to feel loved when your partner lightens your load, and you likely show love by helping. It is a lovely way to care, but remember it should be chosen, not scorekeeping.",
+          "strengths": [
+            "Practical and reliable",
+            "You notice what needs doing"
+          ],
+          "growth": [
+            "Say thanks out loud as well; helping can go unnoticed",
+            "Ask for help directly instead of hoping they notice"
+          ],
+          "tryThisWeek": "Do one task they usually dread, and tell them you did it because you care, not because you owe."
+        },
+        {
+          "id": "gifts",
+          "title": "Thoughtful tokens feel warm to you",
+          "summary": "You tend to be moved by small, thoughtful gifts. For many people this is less about money and more about proof that someone was thinking of them, which fits nicely with this app.",
+          "strengths": [
+            "Great at remembering what delights people",
+            "You keep sentimental moments alive"
+          ],
+          "growth": [
+            "Share that cost does not matter, thought does",
+            "Let free gestures count too"
+          ],
+          "tryThisWeek": "Give a tiny, free or cheap token tied to a shared memory, like a photo, a note or a pebble."
+        },
+        {
+          "id": "touch",
+          "title": "Physical closeness feels warm to you",
+          "summary": "You tend to feel connected through touch and physical closeness, within what is comfortable for both of you. It can be a source of comfort when words are hard. Everyone's comfort and consent matter.",
+          "strengths": [
+            "Comforting and affectionate",
+            "You use closeness to calm and reconnect"
+          ],
+          "growth": [
+            "Ask what touch your partner enjoys, and when",
+            "Find non-physical connection for times apart or low-touch moods"
+          ],
+          "tryThisWeek": "Try a long, quiet hug, and ask what kinds of touch they like best."
+        },
+        {
+          "id": "balanced",
+          "title": "You enjoy a balanced diet",
+          "summary": "Your answers are fairly even, so no single style stands out. That fits what researchers describe: most people appreciate many kinds of affection. Variety, and asking your partner what they would enjoy this week, is a good guide.",
+          "strengths": [
+            "Flexible and open to many forms of care",
+            "Easy to love in different ways"
+          ],
+          "growth": [
+            "Notice which kind feels best on a given day and say so",
+            "Ask your partner about their current preferences"
+          ],
+          "tryThisWeek": "Ask, 'What is one small thing that would feel good this week?' and offer your answer too."
+        }
+      ]
+    }
+  },
+  {
+    "id": "attachment-style",
+    "title": "Attachment style",
+    "subtitle": "Two dimensions of how you approach closeness",
+    "minutes": 3,
+    "caveat": "This short quiz is a reflection tool, not a clinical assessment, and cannot diagnose anything. Researchers measure adult attachment on two dimensions (anxiety and avoidance), which vary continuously; sorting into four quadrants is a simplification. Scores shift with life stage, the relationship you are in, and healing experiences. Items are original and inspired by, not copied from, research scales such as the ECR-R.",
+    "concept": "Adult attachment dimensions (anxiety and avoidance) and earned security",
+    "sources": [
+      {
+        "cite": "Hazan & Shaver (1987). Romantic love conceptualized as an attachment process. JPSP, 52(3), 511-524.",
+        "url": "https://doi.org/10.1037/0022-3514.52.3.511"
+      },
+      {
+        "cite": "Fraley, Waller & Brennan (2000). An item response theory analysis of self-report measures of adult attachment. JPSP, 78(2), 350-365.",
+        "url": "https://doi.org/10.1037/0022-3514.78.2.350"
+      },
+      {
+        "cite": "Roisman et al. (2002). Earned-secure attachment status in retrospect and prospect. Child Development, 73(4), 1204-1219.",
+        "url": "https://doi.org/10.1111/1467-8624.00467"
+      },
+      {
+        "cite": "Fraley (2019). Attachment in adulthood. Annual Review of Psychology, 70, 401-422.",
+        "url": "https://doi.org/10.1146/annurev-psych-010418-102813"
+      }
+    ],
+    "scale": {
+      "type": "likert",
+      "min": 1,
+      "max": 7,
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Slightly disagree",
+        "Neutral",
+        "Slightly agree",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "items": [
+      {
+        "id": "banxiety1",
+        "text": "I often wonder whether my partner cares about me as much as I care about them.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "banxiety2",
+        "text": "When my partner seems distant, I find it hard to stop worrying about it.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "banxiety3",
+        "text": "I need frequent reassurance that we are okay.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "banxiety4",
+        "text": "I sometimes fear that I will be left.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "banxiety5",
+        "text": "I find it easy to feel settled in my relationship, even when my partner is busy.",
+        "dimension": "anxiety",
+        "reverse": true
+      },
+      {
+        "id": "banxiety6",
+        "text": "If my partner is quiet, I usually assume nothing is wrong.",
+        "dimension": "anxiety",
+        "reverse": true
+      },
+      {
+        "id": "bavoidance1",
+        "text": "I prefer to keep some emotional distance, even with someone I love.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "bavoidance2",
+        "text": "It feels uncomfortable when my partner wants to be very close.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "bavoidance3",
+        "text": "I tend to handle problems alone rather than lean on my partner.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "bavoidance4",
+        "text": "Sharing my deepest feelings with a partner feels risky.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "bavoidance5",
+        "text": "I find it easy to depend on my partner when I need help.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "bavoidance6",
+        "text": "I feel comfortable being open about my feelings with my partner.",
+        "dimension": "avoidance",
+        "reverse": true
+      }
+    ],
+    "results": {
+      "method": "Likert 1-7. Reverse-score items flagged reverse:true as (8 - response). Compute anxiety = mean of the 6 anxiety items and avoidance = mean of the 6 avoidance items (each 1-7). Use 4.0 as the cutoff (an app convention at the scale midpoint, not a clinical norm): anxiety >= 4.0 is 'higher', otherwise 'lower'; same for avoidance. Outcome: low anxiety + low avoidance = 'secure-leaning'; high anxiety + low avoidance = 'anxious-leaning'; low anxiety + high avoidance = 'avoidant-leaning'; high anxiety + high avoidance = 'mixed-leaning'. Plot the two scores on a 2D grid as a dot with a fuzzy ring rather than a hard label. Always show the 'earned security' growth tips alongside.",
+      "outcomes": [
+        {
+          "id": "secure-leaning",
+          "title": "Secure-leaning",
+          "summary": "You tend to feel fairly comfortable with both closeness and independence. You can ask for support and give it without too much worry. Remember that this changes with stress and circumstance, and security is something you can keep nurturing.",
+          "strengths": [
+            "Comfortable asking for and offering support",
+            "Can tolerate disagreement without panic"
+          ],
+          "growth": [
+            "Stay curious about partners who feel less secure",
+            "Notice stress periods when you may drift"
+          ],
+          "tryThisWeek": "Tell your partner one thing you appreciate about how they handle hard days. Security grows by being noticed."
+        },
+        {
+          "id": "anxious-leaning",
+          "title": "Closeness-seeking (anxious-leaning)",
+          "summary": "You tend to value closeness a lot and may feel unsettled when it seems to dip. This is a deep care for connection, not neediness. Naming your needs calmly and building self-soothing habits can help the worry quiet down, and security can be earned over time.",
+          "strengths": [
+            "Attuned to the relationship's emotional temperature",
+            "Warm, devoted and expressive"
+          ],
+          "growth": [
+            "Practise self-soothing before seeking reassurance",
+            "Ask for what you need directly instead of testing"
+          ],
+          "tryThisWeek": "When worry rises, pause for three slow breaths, then send a warm, direct message instead of a hint."
+        },
+        {
+          "id": "avoidant-leaning",
+          "title": "Independence-valuing (avoidant-leaning)",
+          "summary": "You tend to value self-reliance and space, and closeness may feel intense. That is a way of staying steady, not a lack of love. Practising small moments of openness can deepen trust, and you can grow toward more secure connection at your own pace.",
+          "strengths": [
+            "Calm and self-sufficient",
+            "Respects others' autonomy"
+          ],
+          "growth": [
+            "Share small feelings before they become big",
+            "Let your partner help sometimes"
+          ],
+          "tryThisWeek": "Share one small feeling or need with your partner and notice that it goes okay."
+        },
+        {
+          "id": "mixed-leaning",
+          "title": "Both-sides (anxious and avoidant-leaning)",
+          "summary": "You may want closeness and also feel wary of it, which can feel confusing. Many people feel this, especially after difficult relationships. It is understandable and not a flaw. Slow steps, safe people and, if you wish, a therapist can help security grow.",
+          "strengths": [
+            "Deeply aware of relationship dynamics",
+            "Capable of great depth once trust is there"
+          ],
+          "growth": [
+            "Go slowly and name the push-pull gently",
+            "Consider support from a counselor if it feels heavy"
+          ],
+          "tryThisWeek": "Tell a trusted person, 'Part of me wants closeness and part of me is wary', and see how it feels to say it."
+        }
+      ]
+    }
+  },
+  {
+    "id": "love-map",
+    "title": "Love map: how well do you know them?",
+    "subtitle": "20 prompts to answer about your partner, then check together",
+    "minutes": 10,
+    "caveat": "This is a curiosity exercise, not a test. The 'love map' idea comes from Gottman's clinical work and has limited independent testing, but being curious about a partner's inner world is a sound habit. There are no right answers: use it to start conversations, never to point out what someone 'should' know. Skip any prompt.",
+    "concept": "Gottman love maps (knowing your partner's inner world)",
+    "sources": [
+      {
+        "cite": "Gottman & Silver (1999). The Seven Principles for Making Marriage Work. Crown. Overview: Gottman Institute, 'Build Love Maps'.",
+        "url": "https://www.gottman.com/blog/build-love-maps/"
+      },
+      {
+        "cite": "Laurenceau, Barrett & Pietromonaco (1998). Intimacy as an interpersonal process. JPSP, 74(5), 1238-1251.",
+        "url": "https://doi.org/10.1037/0022-3514.74.5.1238"
+      }
+    ],
+    "scale": {
+      "type": "open",
+      "selfRating": {
+        "min": 1,
+        "max": 5,
+        "labels": [
+          "Not sure at all",
+          "Not very sure",
+          "Somewhat sure",
+          "Fairly sure",
+          "Very sure"
+        ],
+        "question": "After answering from your own knowledge, how sure are you?"
+      },
+      "note": "Each item has a free-text answer field plus an optional confidence rating. Answers are stored locally; if the partner is also using the app, they may optionally reveal their answers to compare."
+    },
+    "items": [
+      {
+        "id": "c1",
+        "text": "What is something your partner is worried about right now?",
+        "dimension": "inner",
+        "reverse": false
+      },
+      {
+        "id": "c2",
+        "text": "What is a dream they have that they rarely mention?",
+        "dimension": "inner",
+        "reverse": false
+      },
+      {
+        "id": "c3",
+        "text": "What do they do to feel better after a hard day?",
+        "dimension": "inner",
+        "reverse": false
+      },
+      {
+        "id": "c4",
+        "text": "What makes them feel proud of themselves?",
+        "dimension": "inner",
+        "reverse": false
+      },
+      {
+        "id": "c5",
+        "text": "What is one memory from their childhood they love?",
+        "dimension": "history",
+        "reverse": false
+      },
+      {
+        "id": "c6",
+        "text": "Who has been an important person in their life, and why?",
+        "dimension": "history",
+        "reverse": false
+      },
+      {
+        "id": "c7",
+        "text": "What is a moment in your relationship they would call a favourite?",
+        "dimension": "history",
+        "reverse": false
+      },
+      {
+        "id": "c8",
+        "text": "What does their ideal slow weekend morning look like?",
+        "dimension": "daily",
+        "reverse": false
+      },
+      {
+        "id": "c9",
+        "text": "What is a small thing that reliably cheers them up?",
+        "dimension": "daily",
+        "reverse": false
+      },
+      {
+        "id": "c10",
+        "text": "What is a minor annoyance that bothers them more than they admit?",
+        "dimension": "daily",
+        "reverse": false
+      },
+      {
+        "id": "c11",
+        "text": "What song, show or book have they been into lately?",
+        "dimension": "daily",
+        "reverse": false
+      },
+      {
+        "id": "c12",
+        "text": "Who are two of their closest friends, and what do they like about them?",
+        "dimension": "people",
+        "reverse": false
+      },
+      {
+        "id": "c13",
+        "text": "Which family member do they feel closest to, and why?",
+        "dimension": "people",
+        "reverse": false
+      },
+      {
+        "id": "c14",
+        "text": "What is something they hope to do in the next five years?",
+        "dimension": "hopes",
+        "reverse": false
+      },
+      {
+        "id": "c15",
+        "text": "What would a really good year look like to them?",
+        "dimension": "hopes",
+        "reverse": false
+      },
+      {
+        "id": "c16",
+        "text": "What do they need from you when they are stressed: space, help, or company?",
+        "dimension": "stress",
+        "reverse": false
+      },
+      {
+        "id": "c17",
+        "text": "What is something at work or school they find hard right now?",
+        "dimension": "stress",
+        "reverse": false
+      },
+      {
+        "id": "c18",
+        "text": "What helps them feel most loved by you at the moment?",
+        "dimension": "connection",
+        "reverse": false
+      },
+      {
+        "id": "c19",
+        "text": "What is something they have wanted to try with you?",
+        "dimension": "connection",
+        "reverse": false
+      },
+      {
+        "id": "c20",
+        "text": "What is something they care about deeply, beyond you and your relationship?",
+        "dimension": "values",
+        "reverse": false
+      }
+    ],
+    "results": {
+      "method": "No scoring is required. Optional: after the user writes an answer, they rate their confidence 1-5 and later mark 'we checked' with a thumbs-up (matched) or 'learned something' (updated). Show: number checked, number learned. If the user gave confidence ratings, compute the mean over answered items (skip unrated): < 2.5 -> 'curious', 2.5 to 3.9 -> 'growing', >= 4.0 -> 'well-mapped'. These labels are about confidence, not about accuracy or worth. Never compare couples or show partner a score.",
+      "outcomes": [
+        {
+          "id": "curious",
+          "title": "Lots to discover",
+          "summary": "You are in a great place to be curious. Not knowing the answer is simply an invitation to ask. People change, so even long-term partners have things to learn.",
+          "strengths": [
+            "Open to learning",
+            "Room for lovely surprises"
+          ],
+          "growth": [
+            "Ask without pressure",
+            "Avoid treating gaps as failure"
+          ],
+          "tryThisWeek": "Pick two prompts and ask them over dinner, with no preparation."
+        },
+        {
+          "id": "growing",
+          "title": "Map in progress",
+          "summary": "You know a fair amount and are unsure about some areas. That is where good conversations often start. Compare notes and update your map together.",
+          "strengths": [
+            "Solid foundation",
+            "Honest about what you do not know"
+          ],
+          "growth": [
+            "Check your assumptions",
+            "Update answers as life changes"
+          ],
+          "tryThisWeek": "Choose the prompt you were least sure about and ask them about it."
+        },
+        {
+          "id": "well-mapped",
+          "title": "Well-mapped, keep updating",
+          "summary": "You feel confident about your partner's inner world. Confidence is not accuracy, so check with them, since people change. Keep asking fresh questions.",
+          "strengths": [
+            "Attentive and curious",
+            "Probably a good listener"
+          ],
+          "growth": [
+            "Check you are not relying on old information",
+            "Ask about hopes, not just facts"
+          ],
+          "tryThisWeek": "Ask, 'What has changed for you in the last year that I may not know?'"
+        }
+      ]
+    }
+  },
+  {
+    "id": "triangle",
+    "title": "Relationship triangle",
+    "subtitle": "Intimacy, passion and commitment, a snapshot of today",
+    "minutes": 3,
+    "caveat": "This quiz is inspired by Sternberg's triangular theory of love and uses original items. It is a snapshot of how things feel right now, not a verdict on the relationship. Passion often changes over time, and many happy long-term relationships are strongest on intimacy and commitment. The eight 'types' are a handy vocabulary, not scientifically separate categories.",
+    "concept": "Sternberg's triangular theory of love",
+    "sources": [
+      {
+        "cite": "Sternberg (1986). A triangular theory of love. Psychological Review, 93(2), 119-135.",
+        "url": "https://doi.org/10.1037/0033-295X.93.2.119"
+      }
+    ],
+    "scale": {
+      "type": "likert",
+      "min": 1,
+      "max": 7,
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Slightly disagree",
+        "Neutral",
+        "Slightly agree",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "items": [
+      {
+        "id": "dintimacy1",
+        "text": "I feel emotionally close to my partner.",
+        "dimension": "intimacy",
+        "reverse": false
+      },
+      {
+        "id": "dintimacy2",
+        "text": "I can talk to my partner about things I do not tell others.",
+        "dimension": "intimacy",
+        "reverse": false
+      },
+      {
+        "id": "dintimacy3",
+        "text": "My partner understands me.",
+        "dimension": "intimacy",
+        "reverse": false
+      },
+      {
+        "id": "dintimacy4",
+        "text": "I feel supported by my partner when things get hard.",
+        "dimension": "intimacy",
+        "reverse": false
+      },
+      {
+        "id": "dpassion1",
+        "text": "I feel drawn to my partner physically or romantically.",
+        "dimension": "passion",
+        "reverse": false
+      },
+      {
+        "id": "dpassion2",
+        "text": "My partner can still give me butterflies.",
+        "dimension": "passion",
+        "reverse": false
+      },
+      {
+        "id": "dpassion3",
+        "text": "I look forward to affectionate or romantic moments with them.",
+        "dimension": "passion",
+        "reverse": false
+      },
+      {
+        "id": "dpassion4",
+        "text": "I feel a spark or excitement when we are together.",
+        "dimension": "passion",
+        "reverse": false
+      },
+      {
+        "id": "dcommitment1",
+        "text": "I am committed to keeping our relationship strong.",
+        "dimension": "commitment",
+        "reverse": false
+      },
+      {
+        "id": "dcommitment2",
+        "text": "I see us together in the future.",
+        "dimension": "commitment",
+        "reverse": false
+      },
+      {
+        "id": "dcommitment3",
+        "text": "I would work through hard times with my partner.",
+        "dimension": "commitment",
+        "reverse": false
+      },
+      {
+        "id": "dcommitment4",
+        "text": "Choosing my partner is something I feel good about, on purpose.",
+        "dimension": "commitment",
+        "reverse": false
+      }
+    ],
+    "results": {
+      "method": "Likert 1-7, no reverse items. Compute the mean per dimension (intimacy, passion, commitment). A component is 'present' if its mean >= 4.5 (an app convention; document it as 'moderately high or higher'). Outcome by present set: none -> 'nonlove'; I only -> 'friendship' (liking); P only -> 'infatuation'; C only -> 'empty'; I+P -> 'romantic'; I+C -> 'companionate'; P+C -> 'fatuous'; I+P+C -> 'consummate'. Also return the three means to draw a triangle (sides proportional to means / 7). Nonlove: show with extra gentleness and an invitation to reflect.",
+      "outcomes": [
+        {
+          "id": "nonlove",
+          "title": "Quiet right now",
+          "summary": "None of the three feels strong at the moment. That might be a busy or tough period, or the relationship is in a different place. It is not a verdict. Consider what you need, and if it feels heavy, talk with someone you trust or a counselor.",
+          "strengths": [
+            "Honest self-awareness"
+          ],
+          "growth": [
+            "Explore what changed",
+            "Talk with your partner or a professional"
+          ],
+          "tryThisWeek": "Spend ten minutes writing what you want from your relationship, then share one line."
+        },
+        {
+          "id": "friendship",
+          "title": "Friendship (intimacy)",
+          "summary": "Closeness is your strongest side: warm, trusting and understood. Passion and commitment feel lower right now. That is a good base, and many couples grow from here.",
+          "strengths": [
+            "Trust and ease",
+            "Deep understanding"
+          ],
+          "growth": [
+            "Consider whether you want more romance or clearer commitment",
+            "Talk openly about what you each want"
+          ],
+          "tryThisWeek": "Plan a small date that feels romantic, and see how it lands."
+        },
+        {
+          "id": "infatuation",
+          "title": "Infatuation (passion)",
+          "summary": "Passion is strong while closeness and commitment feel lower. That is typical early on. Time and openness can turn excitement into intimacy.",
+          "strengths": [
+            "Excitement and energy",
+            "Strong attraction"
+          ],
+          "growth": [
+            "Build closeness through sharing",
+            "Talk about what each of you wants over time"
+          ],
+          "tryThisWeek": "Ask each other three 'getting to know you' questions beyond the surface."
+        },
+        {
+          "id": "empty",
+          "title": "Commitment (empty love)",
+          "summary": "Commitment is present, but closeness and passion feel lower right now. That can happen in long or busy relationships, and it can be rekindled with attention. It may also be a sign to reflect on what you want.",
+          "strengths": [
+            "Dedicated and steady"
+          ],
+          "growth": [
+            "Rebuild closeness through small rituals",
+            "Consider couples support if you feel stuck"
+          ],
+          "tryThisWeek": "Try a new shared activity to spark something fresh."
+        },
+        {
+          "id": "romantic",
+          "title": "Romantic (intimacy and passion)",
+          "summary": "You feel both close and drawn to each other, with commitment feeling less settled. That is common early on. Talking about where you are heading can help.",
+          "strengths": [
+            "Warmth and excitement",
+            "Strong emotional connection"
+          ],
+          "growth": [
+            "Discuss expectations and future",
+            "Be patient with uncertainty"
+          ],
+          "tryThisWeek": "Share where you each imagine the relationship in a year."
+        },
+        {
+          "id": "companionate",
+          "title": "Companionate (intimacy and commitment)",
+          "summary": "You feel close and committed, with passion quieter. Many long-term relationships look like this, and it can be warm and enduring. If you want more spark, novelty and touch can help.",
+          "strengths": [
+            "Deep trust and stability",
+            "Strong partnership"
+          ],
+          "growth": [
+            "Keep romance on purpose",
+            "Try something new together"
+          ],
+          "tryThisWeek": "Plan something new together, like a different restaurant, route or game."
+        },
+        {
+          "id": "fatuous",
+          "title": "Whirlwind (passion and commitment)",
+          "summary": "Passion and commitment feel strong, while closeness has room to grow. That can happen when things move fast. Time spent sharing and listening builds the middle part.",
+          "strengths": [
+            "Energy and dedication"
+          ],
+          "growth": [
+            "Invest in conversation and understanding",
+            "Slow down to know each other"
+          ],
+          "tryThisWeek": "Have one long, unhurried conversation about everyday feelings."
+        },
+        {
+          "id": "consummate",
+          "title": "All three are strong",
+          "summary": "Closeness, passion and commitment all feel strong right now. Enjoy it. Sternberg noted that keeping it takes ongoing attention, and it may ebb and flow, which is normal.",
+          "strengths": [
+            "Well-rounded connection",
+            "Mutual care and excitement"
+          ],
+          "growth": [
+            "Keep nurturing all three",
+            "Appreciate it, not just maintain it"
+          ],
+          "tryThisWeek": "Tell your partner what you most enjoy about where you are now."
+        }
+      ]
+    }
+  },
+  {
+    "id": "conflict-horsemen",
+    "title": "Conflict & the Four Horsemen",
+    "subtitle": "What you tend to do when things get tense, and what to try instead",
+    "minutes": 4,
+    "caveat": "Everyone does these things when stressed or flooded. This quiz is a reflection tool, not a diagnosis of you or your partner. Gottman's research found the 'Four Horsemen' predicted relationship trouble in observed couples, but the predictions have been critiqued, and antidotes are less studied than the patterns. If conflict in your relationship ever involves fear, threats, control or intimidation, that is different from a communication habit; please see the resources note in the app. Choose the option closest to what you would actually do, not the ideal.",
+    "concept": "Four Horsemen (criticism, contempt, defensiveness, stonewalling) and antidotes; repair",
+    "sources": [
+      {
+        "cite": "Gottman & Levenson (1992). Marital processes predictive of later dissolution. JPSP, 63(2), 221-233.",
+        "url": "https://doi.org/10.1037/0022-3514.63.2.221"
+      },
+      {
+        "cite": "Heyman & Slep (2001). The hazards of predicting divorce without crossvalidation. J Marriage Fam, 63(2), 473-479.",
+        "url": "https://doi.org/10.1111/j.1741-3737.2001.00473.x"
+      },
+      {
+        "cite": "Gottman Institute. The Four Horsemen: Recognizing criticism, contempt, defensiveness and stonewalling.",
+        "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+      }
+    ],
+    "scale": {
+      "type": "choice"
+    },
+    "items": [
+      {
+        "id": "e1",
+        "text": "Your partner is late again without messaging. When they arrive, you say:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "'You're so inconsiderate. You always do this.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "A sarcastic 'Wow, what a surprise,' with an eye-roll.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'I was waiting too, you know. It's not like I'm perfect either.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You say nothing and turn your attention to your phone.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'I was worried and a bit annoyed. Can we talk about how to handle lateness?'",
+            "scores": {
+              "repair": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2",
+        "text": "Your partner says the kitchen was left messy. You respond:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "You mimic their tone and mutter that they are being dramatic.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'It was you who left it like that last time.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You leave the room until they stop talking.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'You're right, I left it. I'll do it now. Anything else bothering you?'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You never notice how much I do. You're just lazy.'",
+            "scores": {
+              "criticism": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e3",
+        "text": "You disagree about how to spend a holiday. You say:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "'I am not being selfish, you're twisting it.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "'Fine. Whatever,' then you stop talking.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'Let's each say what we want from it and look for something that works.'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You only ever care about what you want.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "'Your ideas are always so boring.'",
+            "scores": {
+              "contempt": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e4",
+        "text": "Your partner raises a worry about money. You respond:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "You change the subject and avoid it for days.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'Thanks for telling me. Can we look at the numbers together?'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You're terrible with money.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "You smirk and say they are being ridiculous.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'It is not my fault. You spend more than I do.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e5",
+        "text": "They forgot something important to you. You say:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "'That hurt a bit. Could we find a way to help us both remember?'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You never remember anything about me.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "'Of course you forgot. Typical.'",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'I have a lot going on. You can't expect me to remember everything.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You say you are fine and go quiet.",
+            "scores": {
+              "stonewalling": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e6",
+        "text": "In a heated moment your partner raises their voice. You:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "'You're always angry. What is wrong with you?'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "You laugh and say they sound ridiculous.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'You're overreacting. I did nothing.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You walk out without a word.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'I want to hear you, but I need a break. Let's try again in twenty minutes.'",
+            "scores": {
+              "repair": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e7",
+        "text": "Your partner makes plans without checking with you. You:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "You roll your eyes and say it is typical of them.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'It is not a big deal, and you do the same.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You shut down and stop engaging.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'I would have liked a say. Can we agree on how to plan things together?'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You are so controlling and selfish.'",
+            "scores": {
+              "criticism": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e8",
+        "text": "They tell you that something you did hurt their feelings. You:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "'I did not mean it, so you should not be upset.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You stare at the floor and say nothing.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'I am sorry it hurt. Tell me more so I understand.'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You are so sensitive. You always take things the wrong way.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "You sneer, 'Oh, poor you.'",
+            "scores": {
+              "contempt": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e9",
+        "text": "You feel your partner is on their phone too much. You say:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "You say nothing and sulk.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'I miss you. Could we have phone-free time together tonight?'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You are addicted. You do not care about me.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "'Have fun with your phone, loser.'",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'You're on yours as much as I am.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e10",
+        "text": "You are exhausted and your partner starts a serious talk. You:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "'I want to give this proper attention. Can we talk tomorrow at a set time?'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'You always pick the worst times.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "You sigh loudly and say it is pointless anyway.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'I can't deal with your problems right now.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You nod, zone out and give no response.",
+            "scores": {
+              "stonewalling": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e11",
+        "text": "A small disagreement in front of friends escalates. Later you:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "'You embarrassed me. You are always like this.'",
+            "scores": {
+              "criticism": 1
+            }
+          },
+          {
+            "text": "You joke about them to the friends.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'You started it. I was only responding.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You avoid them for the rest of the evening.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "'I felt uncomfortable earlier. Can we talk about what happened?'",
+            "scores": {
+              "repair": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "e12",
+        "text": "Your partner tries to make up with a joke after a fight. You:",
+        "dimension": "conflict",
+        "reverse": false,
+        "options": [
+          {
+            "text": "You give a cold stare and look away.",
+            "scores": {
+              "contempt": 1
+            }
+          },
+          {
+            "text": "'You are only making this about me again.'",
+            "scores": {
+              "defensiveness": 1
+            }
+          },
+          {
+            "text": "You turn away without a response.",
+            "scores": {
+              "stonewalling": 1
+            }
+          },
+          {
+            "text": "You smile, accept the olive branch and say, 'Okay, I'm ready to talk.'",
+            "scores": {
+              "repair": 1
+            }
+          },
+          {
+            "text": "'Typical. You never take anything seriously.'",
+            "scores": {
+              "criticism": 1
+            }
+          }
+        ]
+      }
+    ],
+    "results": {
+      "method": "Each option adds 1 to exactly one dimension (criticism, contempt, defensiveness, stonewalling, repair). Option order is rotated per item; shuffle on display if desired. After 12 items, totals sum to 12. Rule 1: if repair >= 7, outcome = 'repair'. Otherwise Rule 2: outcome = the Horseman dimension (not repair) with the highest total; if there is a tie for highest, show all tied outcomes (max 2; if more than 2 tie, show the first 2 in this order: criticism, defensiveness, stonewalling, contempt). In every case also show the user's four Horseman totals as neutral bars, and the antidote for the top Horseman. Never present a count as a 'grade'.",
+      "outcomes": [
+        {
+          "id": "repair",
+          "title": "Repair-forward",
+          "summary": "Your answers lean toward calm, repair-minded responses. You often name feelings, take breaks and look for solutions. Even people who are good at this slip when tired, and that is normal. Keep going.",
+          "strengths": [
+            "Gentle start-ups",
+            "Willing to repair and pause"
+          ],
+          "growth": [
+            "Stay patient with a partner who is still learning",
+            "Notice when you are flooded and take breaks"
+          ],
+          "tryThisWeek": "Next time you feel tension, say a repair phrase aloud: 'Can we start over?'"
+        },
+        {
+          "id": "criticism",
+          "title": "Tends toward criticism",
+          "summary": "When tense, you may slip into 'you always' statements about your partner's character. This usually comes from unmet needs, not meanness. The antidote is a gentle start-up: describe the feeling, the specific situation and what you need.",
+          "strengths": [
+            "You care enough to raise problems",
+            "You notice what matters to you"
+          ],
+          "growth": [
+            "Swap 'you always' for 'I feel...when...I need...'",
+            "Focus on one moment, not the whole person"
+          ],
+          "tryThisWeek": "Rewrite one complaint as: 'I feel __ when __. I would like __.'"
+        },
+        {
+          "id": "contempt",
+          "title": "Tends toward contempt",
+          "summary": "Under stress, you may slip into sarcasm, eye-rolls or acting superior. It is common, often a sign of built-up hurt, and it matters because it can wear down closeness. The antidote is building a culture of appreciation and respect.",
+          "strengths": [
+            "You are honest about frustration",
+            "You can become aware and change"
+          ],
+          "growth": [
+            "Notice the moment before the sarcasm and pause",
+            "Rebuild fondness with daily appreciation"
+          ],
+          "tryThisWeek": "Name three things you respect about your partner, and tell them one."
+        },
+        {
+          "id": "defensiveness",
+          "title": "Tends toward defensiveness",
+          "summary": "When feeling blamed, you may protect yourself with excuses or counter-complaints. That is a natural reaction. The antidote is taking responsibility for even a small part, which often calms things down.",
+          "strengths": [
+            "You care about your reputation and fairness",
+            "You can explain your side"
+          ],
+          "growth": [
+            "Find the 5 percent you can own",
+            "Pause before replying with a counter-complaint"
+          ],
+          "tryThisWeek": "Next disagreement, begin with: 'I can see how that part was on me.'"
+        },
+        {
+          "id": "stonewalling",
+          "title": "Tends toward stonewalling",
+          "summary": "When overwhelmed, you may go quiet or withdraw. Often this is your body being flooded, not indifference. The antidote is physiological self-soothing: take a clear break with a return time, then come back.",
+          "strengths": [
+            "You avoid saying hurtful things",
+            "You protect calm"
+          ],
+          "growth": [
+            "Say you need a break, and when you will return",
+            "Return and re-engage after soothing"
+          ],
+          "tryThisWeek": "Agree on a signal and a return time for taking a pause together."
+        }
+      ]
+    }
+  },
+  {
+    "id": "love-styles",
+    "title": "Love styles",
+    "subtitle": "Six flavors of how people think about love",
+    "minutes": 5,
+    "caveat": "This quiz is inspired by John Alan Lee's love styles and the Hendricks' Love Attitudes Scale, using original items. These are attitudes about love, not fixed personality types, and most people blend several. No style is 'good' or 'bad', although some combinations suit some relationships better. Use it to explore, not to label yourself or your partner.",
+    "concept": "Lee's love styles (eros, ludus, storge, pragma, mania, agape)",
+    "sources": [
+      {
+        "cite": "Hendrick & Hendrick (1986). A theory and method of love. JPSP, 50(2), 392-402.",
+        "url": "https://doi.org/10.1037/0022-3514.50.2.392"
+      },
+      {
+        "cite": "Lee, J. A. (1973). The Colors of Love. New Press. (book)",
+        "url": "https://en.wikipedia.org/wiki/Love_styles"
+      }
+    ],
+    "scale": {
+      "type": "likert",
+      "min": 1,
+      "max": 7,
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Slightly disagree",
+        "Neutral",
+        "Slightly agree",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "items": [
+      {
+        "id": "feros1",
+        "text": "Strong chemistry and attraction are important to me in a relationship.",
+        "dimension": "eros",
+        "reverse": false
+      },
+      {
+        "id": "feros2",
+        "text": "I want love to feel intense and romantic.",
+        "dimension": "eros",
+        "reverse": false
+      },
+      {
+        "id": "feros3",
+        "text": "I like to feel swept up by a partner.",
+        "dimension": "eros",
+        "reverse": false
+      },
+      {
+        "id": "fludus1",
+        "text": "I like to keep things light and not get too serious too quickly.",
+        "dimension": "ludus",
+        "reverse": false
+      },
+      {
+        "id": "fludus2",
+        "text": "I enjoy the fun and flirtation of romance more than the commitment.",
+        "dimension": "ludus",
+        "reverse": false
+      },
+      {
+        "id": "fludus3",
+        "text": "I prefer to keep my options open and my independence.",
+        "dimension": "ludus",
+        "reverse": false
+      },
+      {
+        "id": "fstorge1",
+        "text": "The best love grows slowly from a good friendship.",
+        "dimension": "storge",
+        "reverse": false
+      },
+      {
+        "id": "fstorge2",
+        "text": "I would want my partner to be my best friend.",
+        "dimension": "storge",
+        "reverse": false
+      },
+      {
+        "id": "fstorge3",
+        "text": "Shared history and comfort matter more to me than fireworks.",
+        "dimension": "storge",
+        "reverse": false
+      },
+      {
+        "id": "fpragma1",
+        "text": "I think about practical matters, like shared goals and lifestyle, when picking a partner.",
+        "dimension": "pragma",
+        "reverse": false
+      },
+      {
+        "id": "fpragma2",
+        "text": "Good compatibility on life plans is vital to me.",
+        "dimension": "pragma",
+        "reverse": false
+      },
+      {
+        "id": "fpragma3",
+        "text": "I weigh up what a relationship will add to my life.",
+        "dimension": "pragma",
+        "reverse": false
+      },
+      {
+        "id": "fmania1",
+        "text": "When I love someone, I think about them constantly.",
+        "dimension": "mania",
+        "reverse": false
+      },
+      {
+        "id": "fmania2",
+        "text": "I feel very anxious when I do not know where I stand with a partner.",
+        "dimension": "mania",
+        "reverse": false
+      },
+      {
+        "id": "fmania3",
+        "text": "My moods swing with how connected I feel.",
+        "dimension": "mania",
+        "reverse": false
+      },
+      {
+        "id": "fagape1",
+        "text": "I would put my partner's needs ahead of mine without expecting anything back.",
+        "dimension": "agape",
+        "reverse": false
+      },
+      {
+        "id": "fagape2",
+        "text": "I want my partner to be happy even if it costs me.",
+        "dimension": "agape",
+        "reverse": false
+      },
+      {
+        "id": "fagape3",
+        "text": "I find it natural to give and care without keeping score.",
+        "dimension": "agape",
+        "reverse": false
+      }
+    ],
+    "results": {
+      "method": "Likert 1-7, no reverse items. Compute the mean per style (eros, ludus, storge, pragma, mania, agape). Let max be the highest mean. Return the outcome for each style whose mean is within 0.34 of max, in descending order, capped at 2 outcomes (if more tie, take those with the highest means, then the order eros, storge, agape, pragma, mania, ludus). Display all six means as a hexagon/radar or bars. Do not label any style as better; describe them neutrally.",
+      "outcomes": [
+        {
+          "id": "eros",
+          "title": "Eros: romantic and passionate",
+          "summary": "You value chemistry, intensity and romance, and want love to feel alive. That brings energy and warmth. Intense feelings can burn bright, so pair them with friendship and patience.",
+          "strengths": [
+            "Passionate and expressive",
+            "Brings excitement"
+          ],
+          "growth": [
+            "Build friendship alongside the spark",
+            "Let love settle when excitement dips"
+          ],
+          "tryThisWeek": "Plan something romantic and also something comfortable, like a walk, and enjoy both."
+        },
+        {
+          "id": "ludus",
+          "title": "Ludus: playful and light",
+          "summary": "You enjoy love as playful and free, and prefer not to rush into heavy commitment. Lightness brings joy. In longer relationships, being clear about what you want helps your partner feel secure.",
+          "strengths": [
+            "Fun, flirty and easy-going",
+            "Values independence"
+          ],
+          "growth": [
+            "Be clear about your intentions",
+            "Let in some depth when you are ready"
+          ],
+          "tryThisWeek": "Tell your partner something playful you love about them, then one deeper thing."
+        },
+        {
+          "id": "storge",
+          "title": "Storge: friendship-based",
+          "summary": "You see love as a steady friendship that grows over time. This tends to be a stable, comfortable foundation. Keep some novelty so comfort does not turn into routine.",
+          "strengths": [
+            "Loyal and dependable",
+            "Builds trust slowly"
+          ],
+          "growth": [
+            "Add novelty to stay lively",
+            "Voice affection, not just assume it"
+          ],
+          "tryThisWeek": "Do something that is purely fun together, as friends would."
+        },
+        {
+          "id": "pragma",
+          "title": "Pragma: practical and compatible",
+          "summary": "You think carefully about compatibility, goals and practicalities. This helps build lasting partnerships. Leave room for feelings and spontaneity too, since love is not only logistics.",
+          "strengths": [
+            "Thoughtful and realistic",
+            "Good at planning together"
+          ],
+          "growth": [
+            "Make space for emotion and romance",
+            "Share feelings as well as plans"
+          ],
+          "tryThisWeek": "Schedule time that is just for affection, with no to-do list."
+        },
+        {
+          "id": "mania",
+          "title": "Mania: intense and all-in",
+          "summary": "You love intensely and feel connection deeply, which can feel dramatic when things are uncertain. This is not a flaw, but it can make you feel anxious. Self-soothing, clear communication and security-building help.",
+          "strengths": [
+            "Deeply devoted and attentive",
+            "Feels everything vividly"
+          ],
+          "growth": [
+            "Practise self-soothing when worry spikes",
+            "Ask for reassurance directly and kindly"
+          ],
+          "tryThisWeek": "When worry rises, take three breaths and send one kind, direct message."
+        },
+        {
+          "id": "agape",
+          "title": "Agape: giving and selfless",
+          "summary": "You love by giving and caring, with a gentle, generous attitude. That is a precious quality. Look after your own needs too, because healthy giving is chosen, not drained.",
+          "strengths": [
+            "Generous and kind",
+            "Puts care into action"
+          ],
+          "growth": [
+            "Make sure your needs are heard",
+            "Receive as well as give"
+          ],
+          "tryThisWeek": "Ask for one small thing you would like, and let your partner give it."
+        }
+      ]
+    }
+  }
+]

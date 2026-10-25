@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ins-01",
+    "title": "Small bids matter",
+    "body": "Everyday attempts to connect, like a sigh, a joke, or \"look at this\", are called bids. In newlywed research, couples who stayed together answered far more of them. A quick, warm reply is a bigger deal than it looks.",
+    "try": "Next time they point something out, stop and look at it with them.",
+    "concept": "Bids for connection",
+    "source": "Driver & Gottman, 2004, Family Process",
+    "url": "https://doi.org/10.1111/j.1545-5300.2004.00024.x"
+  },
+  {
+    "id": "ins-02",
+    "title": "Turning toward, not perfection",
+    "body": "Nobody catches every bid. The research pattern is about tendencies across many ordinary moments, not perfect attention. Missing one is normal; noticing the next one counts.",
+    "try": "Answer one small comment today with a question, not just \"mm-hm\".",
+    "concept": "Turning toward",
+    "source": "Gottman Institute: turning toward",
+    "url": "https://www.gottman.com/blog/turn-toward-instead-of-away/"
+  },
+  {
+    "id": "ins-03",
+    "title": "Your thought is a tiny bid",
+    "body": "Telling someone \"I thought of you\" is plausibly a small bid for connection. Research has not tested that exact sentence, but it fits what bids look like: low-effort, warm and easy to answer.",
+    "try": "Send them the thought in one line, no reason needed.",
+    "concept": "Bids for connection",
+    "source": "Gottman Institute: turning toward",
+    "url": "https://www.gottman.com/blog/turn-toward-instead-of-away/"
+  },
+  {
+    "id": "ins-04",
+    "title": "Soften the start",
+    "body": "How a hard conversation begins tends to set how it goes. Starting with a gentle \"I feel... I need...\" instead of blame is the Gottman antidote to criticism and gives your partner room to listen.",
+    "try": "Rehearse one worry as \"I feel __ about __, and I need __.\"",
+    "concept": "Four Horsemen: criticism",
+    "source": "Gottman Institute: Four Horsemen and antidotes",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+  },
+  {
+    "id": "ins-05",
+    "title": "Complaint, not character",
+    "body": "A complaint names a specific moment (\"the dishes sat out\"). Criticism attacks the person (\"you're lazy\"). Observational studies link chronic criticism with trouble, so keeping to the specific thing is kinder and clearer.",
+    "try": "Rephrase one frustration so it is about an event, not a trait.",
+    "concept": "Four Horsemen: criticism",
+    "source": "Gottman & Levenson, 1992, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.63.2.221"
+  },
+  {
+    "id": "ins-06",
+    "title": "Contempt is the red flag",
+    "body": "Of the Four Horsemen, contempt (mockery, eye-rolls, acting superior) was the strongest warning sign in Gottman's work. The antidote is a habit of appreciation. Noticing it in yourself is not shameful; it is useful.",
+    "try": "Name one thing you respect about them, silently or aloud.",
+    "concept": "Four Horsemen: contempt",
+    "source": "Gottman Institute: Four Horsemen and antidotes",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+  },
+  {
+    "id": "ins-07",
+    "title": "Own your part",
+    "body": "Defensiveness usually feels like self-protection, but it can sound like \"it's your fault.\" The antidote is owning even a small piece: \"You're right that I forgot.\" That often lowers the temperature fast.",
+    "try": "Next disagreement, say aloud one thing you can own.",
+    "concept": "Four Horsemen: defensiveness",
+    "source": "Gottman Institute: Four Horsemen and antidotes",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+  },
+  {
+    "id": "ins-08",
+    "title": "Pause is not walking away",
+    "body": "Stonewalling means shutting down, often because you feel flooded. The fix is a clear break with a return time: \"I need twenty minutes, then I'll come back.\" That is different from silence with no end.",
+    "try": "Agree on a pause phrase you could both use someday.",
+    "concept": "Four Horsemen: stonewalling",
+    "source": "Gottman Institute: Four Horsemen and antidotes",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+  },
+  {
+    "id": "ins-09",
+    "title": "More warmth than friction",
+    "body": "Gottman's lab found stable couples showed several positive moments per negative one, often quoted as five to one. The exact number is debated, but the direction is well supported: let kindness outweigh friction.",
+    "try": "Add one small positive to today; don't count the negatives.",
+    "concept": "5:1 ratio",
+    "source": "Gottman & Levenson, 2000, J Marriage Fam",
+    "url": "https://doi.org/10.1111/j.1741-3737.2000.00737.x"
+  },
+  {
+    "id": "ins-10",
+    "title": "Not a score to chase",
+    "body": "The 5:1 figure comes from specific lab coding, and the related divorce predictions were criticised for not being cross-validated. Treat it as a rule of thumb about generosity, never as a number to track.",
+    "try": "Skip counting. Just do one friendly thing without announcing it.",
+    "concept": "5:1 ratio",
+    "source": "Heyman & Slep, 2001, J Marriage Fam",
+    "url": "https://doi.org/10.1111/j.1741-3737.2001.00473.x"
+  },
+  {
+    "id": "ins-11",
+    "title": "Draw their map",
+    "body": "A love map is what you know about your partner's inner world: worries, hopes, friends, small likes. It is a clinical idea with limited independent testing, but curiosity about a partner is a good habit anyway.",
+    "try": "Ask one \"what's on your mind lately?\" question.",
+    "concept": "Love maps",
+    "source": "Gottman Institute: love maps",
+    "url": "https://www.gottman.com/blog/build-love-maps/"
+  },
+  {
+    "id": "ins-12",
+    "title": "Maps need updating",
+    "body": "People change. The coffee order you know may be out of date, and so may bigger things. Asking again, without assuming, shows interest rather than ignorance.",
+    "try": "Ask a question you think you already know the answer to.",
+    "concept": "Love maps",
+    "source": "Gottman Institute: love maps",
+    "url": "https://www.gottman.com/blog/build-love-maps/"
+  },
+  {
+    "id": "ins-13",
+    "title": "Repair beats being right",
+    "body": "Repair attempts are any move to de-escalate: humor, a touch, \"can we start over?\". In Gottman's framework, whether they land matters for how couples fare. Accepting a repair is as important as offering one.",
+    "try": "Practice a repair line, like \"Can we reset? I want to hear you.\"",
+    "concept": "Repair attempts",
+    "source": "Gottman Institute: Four Horsemen and antidotes",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+  },
+  {
+    "id": "ins-14",
+    "title": "Fondness is a habit",
+    "body": "In the Gottman model, couples who keep noticing what they admire in each other tend to tell a warmer story about their relationship. Fondness and admiration is a skill you can feed with small daily noticing.",
+    "try": "Name one trait you admire in them, today.",
+    "concept": "Fondness and admiration",
+    "source": "Gottman Institute: the Gottman Method",
+    "url": "https://www.gottman.com/about/the-gottman-method/"
+  },
+  {
+    "id": "ins-15",
+    "title": "Two dimensions, not boxes",
+    "body": "Adult attachment is usually measured on two scales: anxiety (worry about being left) and avoidance (discomfort with closeness). Most people sit somewhere in the middle, and where you sit can move.",
+    "try": "Notice one moment today when closeness felt easy.",
+    "concept": "Adult attachment",
+    "source": "Fraley, 2019, Annual Review of Psychology",
+    "url": "https://doi.org/10.1146/annurev-psych-010418-102813"
+  },
+  {
+    "id": "ins-16",
+    "title": "Needing reassurance is human",
+    "body": "Higher attachment anxiety means reassurance matters more to you. That is a preference for closeness, not a flaw. Asking directly for it tends to work better than testing or hinting.",
+    "try": "Ask for what you need in one clear, kind sentence.",
+    "concept": "Attachment anxiety",
+    "source": "Fraley, 2019, Annual Review of Psychology",
+    "url": "https://doi.org/10.1146/annurev-psych-010418-102813"
+  },
+  {
+    "id": "ins-17",
+    "title": "Space is not rejection",
+    "body": "Higher attachment avoidance often means you recharge through independence. Partners sometimes read that as coldness. Saying \"I need an hour, and I'm glad you're here\" bridges both.",
+    "try": "Pair any alone time with a small \"I'm still with you.\"",
+    "concept": "Attachment avoidance",
+    "source": "Fraley, 2019, Annual Review of Psychology",
+    "url": "https://doi.org/10.1146/annurev-psych-010418-102813"
+  },
+  {
+    "id": "ins-18",
+    "title": "Security can be earned",
+    "body": "Some people who had difficult early experiences become securely attached in adulthood, often through supportive relationships and reflection. Attachment patterns are moderately stable, not fixed.",
+    "try": "Recall a time someone was reliably kind to you. Thank them.",
+    "concept": "Earned security",
+    "source": "Roisman et al., 2002, Child Development",
+    "url": "https://doi.org/10.1111/1467-8624.00467"
+  },
+  {
+    "id": "ins-19",
+    "title": "Be a safe landing",
+    "body": "A partner tends to feel secure when you are reliably responsive, not perfect. Turning up predictably, with attention and warmth, is what builds felt safety over time.",
+    "try": "Put your phone down for the first minute after you reunite.",
+    "concept": "Attachment security",
+    "source": "Hazan & Shaver, 1987, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.52.3.511"
+  },
+  {
+    "id": "ins-20",
+    "title": "Feeling understood matters",
+    "body": "Perceived partner responsiveness means feeling understood, valued and cared for. It is one of the best-supported ingredients of closeness, and it is built in everyday listening, not grand gestures.",
+    "try": "Reflect back what they said before you respond.",
+    "concept": "Perceived partner responsiveness",
+    "source": "Laurenceau et al., 1998, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.74.5.1238"
+  },
+  {
+    "id": "ins-21",
+    "title": "Celebrate their good news",
+    "body": "How you respond when your partner shares something good predicts closeness. Active, enthusiastic replies (\"Tell me everything!\") beat polite or distracted ones, according to diary and lab research.",
+    "try": "Ask two follow-up questions about their next good news.",
+    "concept": "Capitalization",
+    "source": "Gable et al., 2006, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.91.5.904"
+  },
+  {
+    "id": "ins-22",
+    "title": "Four ways to respond",
+    "body": "To good news you can respond actively and constructively (enthusiastic), passively constructively (quiet support), actively destructively (find the downside), or passively destructively (ignore). Only the first strongly builds closeness.",
+    "try": "Notice which style you default to; try the first today.",
+    "concept": "Active-constructive responding",
+    "source": "Gable et al., 2004, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.87.2.228"
+  },
+  {
+    "id": "ins-23",
+    "title": "Sharing good news counts",
+    "body": "Telling your partner about good things, called capitalizing, itself benefits you: events feel better when shared with someone who responds warmly. Bring them your small wins too.",
+    "try": "Share one tiny good thing from today with them.",
+    "concept": "Capitalization",
+    "source": "Gable et al., 2004, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.87.2.228"
+  },
+  {
+    "id": "ins-24",
+    "title": "Disclosure plus response",
+    "body": "Closeness grows when one person shares something personal and the other responds with understanding. The sharing alone isn't enough; the felt response is the key ingredient.",
+    "try": "Share a small feeling, not just facts, from your day.",
+    "concept": "Intimacy process",
+    "source": "Laurenceau et al., 1998, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.74.5.1238"
+  },
+  {
+    "id": "ins-25",
+    "title": "Try something new together",
+    "body": "Couples who did novel, mildly exciting activities together reported higher relationship quality in experiments. Newness taps self-expansion, the feeling of growing with someone.",
+    "try": "Pick a new walk route, recipe or cafe to try together.",
+    "concept": "Self-expansion",
+    "source": "Aron et al., 2000, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.78.2.273"
+  },
+  {
+    "id": "ins-26",
+    "title": "Growing through each other",
+    "body": "Self-expansion theory says we love partly because a close other expands who we are: skills, views and experiences. Relationships can go flat when growth stops, and fresh shared experiences help.",
+    "try": "Learn one tiny new thing from them this week.",
+    "concept": "Self-expansion",
+    "source": "Aron et al., 2000, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.78.2.273"
+  },
+  {
+    "id": "ins-27",
+    "title": "Closeness from curiosity",
+    "body": "In lab sessions, strangers who took turns answering gradually deeper questions felt closer than those who made small talk. Questions can build closeness fast; the study does not promise love on demand.",
+    "try": "Ask \"what's something you've been looking forward to?\"",
+    "concept": "36 questions",
+    "source": "Aron et al., 1997, PSPB",
+    "url": "https://doi.org/10.1177/0146167297234003"
+  },
+  {
+    "id": "ins-28",
+    "title": "Thank them for being them",
+    "body": "Gratitude is not just manners. Algoe's find-remind-bind idea says thanks helps you notice a partner's value, reminds you why you are together, and encourages investing in the bond.",
+    "try": "Thank them for something small they did this week.",
+    "concept": "Gratitude",
+    "source": "Algoe, 2012, Soc Personal Psych Compass",
+    "url": "https://doi.org/10.1111/j.1751-9004.2012.00439.x"
+  },
+  {
+    "id": "ins-29",
+    "title": "Say the specific thing",
+    "body": "Research suggests gratitude lands best when it shows you noticed what they did and what it says about them. \"You remembered my meeting, that's so thoughtful\" beats a plain \"thanks\".",
+    "try": "Thank them with one detail they might not expect you noticed.",
+    "concept": "Gratitude",
+    "source": "Algoe et al., 2008, Emotion",
+    "url": "https://doi.org/10.1037/1528-3542.8.3.425"
+  },
+  {
+    "id": "ins-30",
+    "title": "Gratitude booster shot",
+    "body": "In a diary study of couples, days with more felt and received gratitude went with better relationship feelings the next day. Small daily thanks look like a low-cost boost.",
+    "try": "Notice one thing today you would normally take for granted.",
+    "concept": "Gratitude",
+    "source": "Algoe et al., 2010, Personal Relationships",
+    "url": "https://doi.org/10.1111/j.1475-6811.2010.01273.x"
+  },
+  {
+    "id": "ins-31",
+    "title": "Thanks keeps care going",
+    "body": "Gordon and colleagues found people who felt more grateful to their partner were more motivated to take care of the relationship later on. Appreciation may feed itself.",
+    "try": "Write a two-line thank-you note and leave it somewhere.",
+    "concept": "Gratitude",
+    "source": "Gordon et al., 2012, JPSP",
+    "url": "https://doi.org/10.1037/a0028723"
+  },
+  {
+    "id": "ins-32",
+    "title": "Appreciation predicts happiness",
+    "body": "A large analysis of many couples studies found that feeling appreciated by a partner is among the strongest predictors of relationship quality. Your own traits mattered less than what happens between you.",
+    "try": "Tell them what you appreciate before it is asked.",
+    "concept": "Predictors of quality",
+    "source": "Joel et al., 2020, PNAS",
+    "url": "https://doi.org/10.1073/pnas.1917036117"
+  },
+  {
+    "id": "ins-33",
+    "title": "Commitment is a feeling too",
+    "body": "Across many studies, people feel more committed when they are satisfied, have invested in the relationship and see fewer attractive alternatives. Satisfaction is the biggest piece.",
+    "try": "Do one thing that makes the relationship more satisfying today.",
+    "concept": "Investment model",
+    "source": "Le & Agnew, 2003, Personal Relationships",
+    "url": "https://doi.org/10.1111/1475-6811.00035"
+  },
+  {
+    "id": "ins-34",
+    "title": "Shared stuff counts",
+    "body": "Rusbult's investment model includes things you have built together: memories, friends, plans. They can make a relationship feel meaningful, but they are never a reason to stay in an unhealthy one.",
+    "try": "Look at an old photo of you two and smile.",
+    "concept": "Investment model",
+    "source": "Le & Agnew, 2003, Personal Relationships",
+    "url": "https://doi.org/10.1111/1475-6811.00035"
+  },
+  {
+    "id": "ins-35",
+    "title": "Give because you want to",
+    "body": "Daily sacrifices go better when done to make the partner happy or to enjoy the shared life, and worse when done to avoid conflict or out of pressure. Why you give matters.",
+    "try": "Do one favour only if you genuinely want to.",
+    "concept": "Sacrifice",
+    "source": "Impett et al., 2005, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.89.3.327"
+  },
+  {
+    "id": "ins-36",
+    "title": "Generous reading",
+    "body": "Partners who see each other a little more positively than outside observers do tend to be happier. It is about generous interpretation of small things, not ignoring real problems.",
+    "try": "Assume the kindest likely reason for something small today.",
+    "concept": "Positive illusions",
+    "source": "Murray et al., 1996, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.70.1.79"
+  },
+  {
+    "id": "ins-37",
+    "title": "We-thinking is a sign",
+    "body": "Researchers call it cognitive interdependence: thinking in terms of \"we\" and \"us\". It rose with commitment and predicted couples staying together. It's a gentle marker of closeness, not a score to chase.",
+    "try": "Try saying \"we\" about a plan you share.",
+    "concept": "Cognitive interdependence",
+    "source": "Agnew et al., 1998, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.74.4.939"
+  },
+  {
+    "id": "ins-38",
+    "title": "Thoughts of them are normal",
+    "body": "Close partners often become part of how we think, including coming to mind in everyday moments. How often you think of someone isn't a measure of love, and quiet days are fine.",
+    "try": "Notice a moment today when they came to mind. Smile.",
+    "concept": "Cognitive interdependence",
+    "source": "Agnew et al., 1998, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.74.4.939"
+  },
+  {
+    "id": "ins-39",
+    "title": "Savor the little moment",
+    "body": "Savoring means deliberately noticing and staying with a good moment. Applied to a partner thought, you pause for a few breaths and enjoy it rather than rushing on. It is a skill anyone can practice.",
+    "try": "Let a warm thought of them last ten slow breaths.",
+    "concept": "Savoring",
+    "source": "Barnes et al., 2007, J Marital Fam Ther",
+    "url": "https://doi.org/10.1111/j.1752-0606.2007.00033.x"
+  },
+  {
+    "id": "ins-40",
+    "title": "Mindful moments with them",
+    "body": "Higher everyday mindfulness has been linked to being more satisfied in relationships and handling relationship stress better. Being fully present for a few minutes can be enough.",
+    "try": "Eat one meal together phone-free, or just pause with them.",
+    "concept": "Mindfulness",
+    "source": "Barnes et al., 2007, J Marital Fam Ther",
+    "url": "https://doi.org/10.1111/j.1752-0606.2007.00033.x"
+  },
+  {
+    "id": "ins-41",
+    "title": "Preferences, not a type",
+    "body": "Love languages popularized five ways of feeling loved. A 2024 scientific review found no good evidence that you have one fixed language or that matching languages boosts satisfaction. Preferences do exist.",
+    "try": "Ask them what small thing felt nicest lately.",
+    "concept": "Love languages",
+    "source": "Impett, Park & Muise, 2024, Curr Dir Psychol Sci",
+    "url": "https://doi.org/10.1177/09637214231217663"
+  },
+  {
+    "id": "ins-42",
+    "title": "A balanced diet of love",
+    "body": "Instead of one love language, researchers suggest a \"balanced diet\": words, time, help, touch and gifts all matter and different ones fit different moments. Variety beats finding the single right key.",
+    "try": "Show affection in a way you haven't this week.",
+    "concept": "Love languages",
+    "source": "Impett, Park & Muise, 2024, Curr Dir Psychol Sci",
+    "url": "https://doi.org/10.1177/09637214231217663"
+  },
+  {
+    "id": "ins-43",
+    "title": "Ask, don't assume",
+    "body": "The helpful kernel of love languages is tuning your love to the person. Asking \"what would feel good this week?\" is plain responsiveness, which has far stronger evidence behind it.",
+    "try": "Ask what would help them feel cared for this week.",
+    "concept": "Love languages / responsiveness",
+    "source": "Gable et al., 2006, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.91.5.904"
+  },
+  {
+    "id": "ins-44",
+    "title": "Three parts of love",
+    "body": "Sternberg described love as intimacy (closeness), passion (desire) and commitment (decision to stay). Relationships mix these differently and often shift over time, and no mix is the only good one.",
+    "try": "Notice which of the three you feel most this week.",
+    "concept": "Triangular theory",
+    "source": "Sternberg, 1986, Psychological Review",
+    "url": "https://doi.org/10.1037/0033-295X.93.2.119"
+  },
+  {
+    "id": "ins-45",
+    "title": "Passion changes shape",
+    "body": "In the triangular theory, passion can fade as intimacy and commitment grow, and companionate love is still real love. Warmth can be rebuilt with novelty, but no one owes constant fireworks.",
+    "try": "Do something playful together, low pressure.",
+    "concept": "Triangular theory",
+    "source": "Aron et al., 2000, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.78.2.273"
+  },
+  {
+    "id": "ins-46",
+    "title": "Different shapes are fine",
+    "body": "Partners can differ on closeness, passion and commitment, and Sternberg noted mismatches can cause friction. Talking about your shapes openly is more useful than comparing totals.",
+    "try": "Describe to them one thing that feels strong between you.",
+    "concept": "Triangular theory",
+    "source": "Sternberg, 1986, Psychological Review",
+    "url": "https://doi.org/10.1037/0033-295X.93.2.119"
+  },
+  {
+    "id": "ins-47",
+    "title": "Love has different flavors",
+    "body": "Lee's love styles: eros (romantic), ludus (playful), storge (friendship), pragma (practical), mania (intense), agape (giving). These are attitudes, not types, and most people mix several.",
+    "try": "Which flavor felt strongest today? Notice without judging.",
+    "concept": "Love styles",
+    "source": "Hendrick & Hendrick, 1986, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.50.2.392"
+  },
+  {
+    "id": "ins-48",
+    "title": "Friendship-based love lasts",
+    "body": "In Love Attitudes Scale research, friendship-style (storge) and giving (agape) attitudes tend to go with satisfaction, while game-playing (ludus) tends not to. These are modest associations.",
+    "try": "Do something together that you'd do with a good friend.",
+    "concept": "Love styles",
+    "source": "Hendrick & Hendrick, 1986, JPSP",
+    "url": "https://doi.org/10.1037/0022-3514.50.2.392"
+  },
+  {
+    "id": "ins-49",
+    "title": "Different conflict styles work",
+    "body": "Gottman described validating, volatile and avoiding couples who were all stable when positivity stayed high. Your style does not have to match theirs, but respect has to be present.",
+    "try": "Share how you each prefer to handle a disagreement.",
+    "concept": "Conflict styles",
+    "source": "Gottman, 1993, J Consult Clin Psychol",
+    "url": "https://doi.org/10.1037/0022-006X.61.1.6"
+  },
+  {
+    "id": "ins-50",
+    "title": "Disagree with warmth",
+    "body": "Gottman found stable volatile couples balanced fiery arguments with plenty of humor and affection. Passion in conflict is not a problem if respect and warmth are still in the room.",
+    "try": "After a disagreement, add a hug, joke or kind word.",
+    "concept": "Conflict styles",
+    "source": "Gottman, 1993, J Consult Clin Psychol",
+    "url": "https://doi.org/10.1037/0022-006X.61.1.6"
+  },
+  {
+    "id": "ins-51",
+    "title": "Pursue and withdraw",
+    "body": "A common loop: one person pushes for talk, the other pulls away, each making the other's move stronger. Emotionally focused therapy helps couples see the loop as the problem, not the partner.",
+    "try": "Name the loop kindly: \"we're doing the thing again.\"",
+    "concept": "EFT",
+    "source": "Wiebe & Johnson, 2016, Family Process",
+    "url": "https://doi.org/10.1111/famp.12229"
+  },
+  {
+    "id": "ins-52",
+    "title": "Say the need under the anger",
+    "body": "EFT teaches that behind anger or distance there is often a softer need: to feel important, safe or wanted. Voicing that need tends to draw a different response than voicing the complaint.",
+    "try": "Try \"I miss you\" instead of \"you never...\" once.",
+    "concept": "EFT",
+    "source": "Wiebe & Johnson, 2016, Family Process",
+    "url": "https://doi.org/10.1111/famp.12229"
+  },
+  {
+    "id": "ins-53",
+    "title": "Couples therapy can help",
+    "body": "Emotionally focused therapy has reasonable trial evidence for helping distressed couples. If you feel stuck in the same fight, seeing a licensed couples therapist is a strong, normal choice, not a failure.",
+    "try": "If stuck, look up a licensed couples therapist near you.",
+    "concept": "Seeking help",
+    "source": "Wiebe & Johnson, 2016, Family Process",
+    "url": "https://doi.org/10.1111/famp.12229"
+  },
+  {
+    "id": "ins-54",
+    "title": "Fear is not a communication problem",
+    "body": "If you feel afraid of a partner, monitored, or controlled, that is not ordinary conflict, and tips from this app are not the answer. You deserve support from a trained advocate.",
+    "try": "See thehotline.org or your local helpline if this feels familiar.",
+    "concept": "Healthy vs unhealthy",
+    "source": "The Hotline: understanding relationship abuse",
+    "url": "https://www.thehotline.org/identify-abuse/understand-relationship-abuse/"
+  },
+  {
+    "id": "ins-55",
+    "title": "Control isn't care",
+    "body": "Warning signs of an unhealthy relationship include monitoring, isolating you, controlling money, or threats. Care leaves room for your friends, privacy and saying no. This is never your fault.",
+    "try": "Read the signs at thehotline.org; talk to someone you trust.",
+    "concept": "Healthy vs unhealthy",
+    "source": "The Hotline: understanding relationship abuse",
+    "url": "https://www.thehotline.org/identify-abuse/understand-relationship-abuse/"
+  },
+  {
+    "id": "ins-56",
+    "title": "Your own space is healthy",
+    "body": "Closeness and autonomy go together. Time with friends, hobbies and solitude help you bring more to the relationship. Needing space is not a rejection, from either side.",
+    "try": "Enjoy something that is just yours, and tell them about it later.",
+    "concept": "Autonomy",
+    "source": "Fraley, 2019, Annual Review of Psychology",
+    "url": "https://doi.org/10.1146/annurev-psych-010418-102813"
+  },
+  {
+    "id": "ins-57",
+    "title": "Apologies that land",
+    "body": "Repair works best when it is sincere and specific. Name what you did, how it affected them and what you'll do differently. It supports the repair attempts Gottman links to resilient couples.",
+    "try": "Offer one specific apology you have been postponing.",
+    "concept": "Repair attempts",
+    "source": "Gottman Institute: Four Horsemen and antidotes",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+  },
+  {
+    "id": "ins-58",
+    "title": "Reunite on purpose",
+    "body": "The first minutes together are an easy place to turn toward. A real greeting, a hug or a \"how was your day?\" fits what research finds about bids and warmth in daily life.",
+    "try": "Greet them with a hug and one real question.",
+    "concept": "Turning toward",
+    "source": "Driver & Gottman, 2004, Family Process",
+    "url": "https://doi.org/10.1111/j.1545-5300.2004.00024.x"
+  },
+  {
+    "id": "ins-59",
+    "title": "Small and steady wins",
+    "body": "Relationship science points more to small, repeated positive acts than to big romantic gestures: bids, gratitude, listening. Your tiny daily moments are the thing.",
+    "try": "Pick the easiest kind gesture you can repeat tomorrow.",
+    "concept": "Everyday positivity",
+    "source": "Algoe et al., 2010, Personal Relationships",
+    "url": "https://doi.org/10.1111/j.1475-6811.2010.01273.x"
+  },
+  {
+    "id": "ins-60",
+    "title": "Be gentle with yourself",
+    "body": "You'll sometimes miss a bid, snap, or forget. Relationships don't need perfection; what counts is repair and returning to warmth. You can start again anytime.",
+    "try": "Forgive yourself for one slip, then do one kind thing.",
+    "concept": "Repair attempts",
+    "source": "Gottman Institute: Four Horsemen and antidotes",
+    "url": "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+  }
+]
