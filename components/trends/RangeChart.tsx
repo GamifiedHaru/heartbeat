@@ -119,7 +119,7 @@ export function RangeChart({
       <div
         role="img"
         aria-label={summaryText}
-        className="-mx-1 mt-3 h-[220px] touch-pan-y"
+        className="relative -mx-1 mt-3 h-[220px] touch-pan-y"
         onPointerDown={(e) => {
           startX.current = e.clientX;
           moved.current = false;
@@ -202,6 +202,13 @@ export function RangeChart({
             </Bar>
           </BarChart>
         </ResponsiveContainer>
+        {summary.total === 0 && (
+          <p className="pointer-events-none absolute inset-x-0 top-[40%] text-center text-subhead text-label-3">
+            {offset === 0
+              ? "No beats yet — the next one starts it"
+              : "No beats in this period"}
+          </p>
+        )}
       </div>
     </Card>
   );

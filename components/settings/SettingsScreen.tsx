@@ -74,7 +74,8 @@ function HowItWorks() {
       <p className={p}>
         Tap the heart each time they cross your mind. That is one beat. Hold the
         heart to log a longer thought, with an optional note and mood. Every
-        beat can be undone for a few seconds, or deleted later.
+        beat can be undone for a few seconds, or deleted later from that day in
+        Trends → Last 26 weeks.
       </p>
       <h3 className={h}>Private by design</h3>
       <p className={p}>
@@ -99,6 +100,7 @@ export function SettingsScreen() {
   const beats = useBeats();
   const [persisted, setPersisted] = useState<boolean | null>(null);
   const [importing, setImporting] = useState<Backup | null>(null);
+  const [confirmReplace, setConfirmReplace] = useState(false);
   const [howOpen, setHowOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [confirmText, setConfirmText] = useState("");
@@ -253,7 +255,7 @@ export function SettingsScreen() {
                 className={cx(
                   "tnum size-11 rounded-full text-body font-semibold",
                   settings.minutesPerBeat === m
-                    ? "bg-accent text-label"
+                    ? "bg-accent-strong text-label"
                     : "bg-card-2 text-label-2",
                 )}
               >
@@ -353,7 +355,12 @@ export function SettingsScreen() {
 
       <Sheet
         open={importing !== null}
-        onOpenChange={(o) => !o && setImporting(null)}
+        onOpenChange={(o) => {
+          if (!o) {
+            setImporting(null);
+            setConfirmReplace(false);
+          }
+        }}
         title="Import backup"
       >
         {importing && (
@@ -369,11 +376,20 @@ export function SettingsScreen() {
             <p className="px-2 text-center text-footnote text-label-2">
               Merge adds beats you don't have yet and keeps everything else.
             </p>
-            <Button variant="secondary" onClick={() => runImport("replace")}>
-              Replace everything
+            <Button
+              variant="secondary"
+              onClick={() =>
+                confirmReplace ? runImport("replace") : setConfirmReplace(true)
+              }
+            >
+              {confirmReplace
+                ? "Yes, replace everything"
+                : "Replace everything"}
             </Button>
             <p className="px-2 text-center text-footnote text-label-2">
-              Replace swaps your current data for the backup.
+              {confirmReplace
+                ? "This deletes the beats and quiz results on this phone and can't be undone. Export a backup first if unsure."
+                : "Replace swaps your current data for the backup."}
             </p>
             <Button variant="plain" onClick={() => setImporting(null)}>
               Cancel

@@ -91,21 +91,13 @@ function bucketStarts(range: Range, start: number, end: number): number[] {
   let d = new Date(start);
   const step =
     range === "D"
-      ? (x: Date) => new Date(x.getTime() + 3600_000)
+      ? // Real elapsed hours: DST days get 23 or 25 buckets, none merged.
+        (x: Date) => new Date(x.getTime() + 3600_000)
       : range === "W" || range === "M"
         ? (x: Date) => addDays(x, 1)
         : range === "6M"
           ? (x: Date) => addWeeks(x, 1)
           : (x: Date) => addMonths(x, 1);
-  if (range === "D") {
-    // Use calendar hours so DST days still give correct local hours.
-    for (let h = 0; h < 24; h++) {
-      const x = new Date(start);
-      x.setHours(h, 0, 0, 0);
-      out.push(x.getTime());
-    }
-    return out;
-  }
   if (range === "6M") d = startOfWeek(d, WEEK);
   while (d.getTime() < end) {
     out.push(d.getTime());
@@ -334,15 +326,18 @@ export function highlights(
 ): Highlight[] {
   const name = partner.trim() || "them";
   const out: Highlight[] = [];
-  const thisWeek = summarize(beats, "W", now);
-  const lastWeek = summarize(beats, "W", now, -1);
-
-  // Compare like with like: this week so far vs the same days last week.
-  const daysSoFar = weekdayIndex(now) + 1;
-  const lastSameSpan = lastWeek.buckets
-    .slice(0, daysSoFar)
-    .reduce((a, b) => a + b.count, 0);
-  const thisSpan = thisWeek.total;
+  // Compare like with like: this week so far vs last week up to this same
+  // moment (same weekday and time), so mornings aren't measured against a
+  // full day.
+  const weekStart = startOfWeek(now, WEEK).getTime();
+  const lastStart = addWeeks(weekStart, -1).getTime();
+  const lastCut = addWeeks(now, -1).getTime();
+  let thisSpan = 0;
+  let lastSameSpan = 0;
+  for (const b of beats) {
+    if (b.at >= weekStart && b.at <= now) thisSpan++;
+    else if (b.at >= lastStart && b.at <= lastCut) lastSameSpan++;
+  }
   if (lastSameSpan >= 3 || thisSpan >= 3) {
     const diff = thisSpan - lastSameSpan;
     if (diff === 0) {
@@ -360,7 +355,7 @@ export function highlights(
         body:
           diff > 0
             ? `${name} has crossed your mind ${n} more ${n === 1 ? "time" : "times"} this week than by this point last week.`
-            : `${n} fewer ${n === 1 ? "beat" : "beats"} than by this point last week. Busy weeks happen — every beat still counts.`,
+            : `${n} fewer ${n === 1 ? "beat" : "beats"} than by this point last week. Every beat still counts.`,
         tone: diff > 0 ? "up" : "neutral",
       });
     }
@@ -391,7 +386,7 @@ export function highlights(
     ];
     out.push({
       id: "peak-day",
-      title: "Favourite day to miss them",
+      title: "Your most thoughtful day",
       body: `${names[top]} bring the most thoughts of ${name}.`,
       tone: "neutral",
     });

@@ -201,7 +201,9 @@ export function LearnScreen() {
               <span
                 className={cx(
                   "flex h-8 items-center whitespace-nowrap rounded-full px-3.5 text-footnote font-semibold",
-                  active ? "bg-accent text-label" : "bg-card text-label-2",
+                  active
+                    ? "bg-accent-strong text-label"
+                    : "bg-card text-label-2",
                 )}
               >
                 {c}

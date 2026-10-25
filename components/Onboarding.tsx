@@ -1,7 +1,7 @@
 "use client";
 
 import { Heart, Lock, Share, SquarePlus } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useState } from "react";
 import { updateSettings } from "@/lib/db";
 import { Button, cx, Toggle } from "./ui";
@@ -19,6 +19,7 @@ export function Onboarding() {
   const [partner, setPartner] = useState("");
   const [me, setMe] = useState("");
   const [autoLog, setAutoLog] = useState(false);
+  const reduce = useReducedMotion();
   const installed = isStandalone();
   const steps = installed ? 2 : 3;
 
@@ -59,7 +60,9 @@ export function Onboarding() {
             <>
               <div className="flex flex-1 flex-col items-center justify-center text-center">
                 <motion.div
-                  animate={{ scale: [1, 1.08, 1, 1.05, 1] }}
+                  animate={
+                    reduce ? undefined : { scale: [1, 1.08, 1, 1.05, 1] }
+                  }
                   transition={{
                     duration: 1.4,
                     repeat: Number.POSITIVE_INFINITY,
@@ -147,7 +150,7 @@ export function Onboarding() {
               <button
                 type="submit"
                 disabled={!partner.trim()}
-                className="mb-4 h-[50px] rounded-[12px] bg-accent text-headline font-semibold disabled:opacity-40"
+                className="mb-4 h-[50px] rounded-[12px] bg-accent-strong text-headline font-semibold disabled:opacity-40"
               >
                 Continue
               </button>

@@ -141,3 +141,17 @@ describe("performance", () => {
     expect(performance.now() - t).toBeLessThan(500);
   });
 });
+
+describe("week-over-week fairness", () => {
+  it("compares against last week only up to the same moment", () => {
+    // Monday 13 Oct 2025, 09:00. Last Monday (6 Oct): 4 beats before 9am, 4 after.
+    const mon9 = new Date(2025, 9, 13, 9).getTime();
+    const beats = [
+      ...[6, 7, 8, 8].map((h) => beat(new Date(2025, 9, 6, h).getTime())),
+      ...[12, 15, 18, 21].map((h) => beat(new Date(2025, 9, 6, h).getTime())),
+      beat(new Date(2025, 9, 13, 8).getTime()),
+    ];
+    const wow = highlights(beats, mon9, "Sam").find((h) => h.id === "wow");
+    expect(wow?.body).toMatch(/^3 fewer/);
+  });
+});

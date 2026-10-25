@@ -1,15 +1,15 @@
 "use client";
 
 import { BookHeart, ChartColumn, Heart, Settings } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
-import { useEffect, useRef, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { Toaster } from "sonner";
 import { setHapticsEnabled } from "@/lib/haptics";
 import { useSettings } from "@/lib/hooks";
 import { Onboarding } from "./Onboarding";
 import { TodayScreen } from "./today/TodayScreen";
-import { cx } from "./ui";
+import { cx, preloadSheet } from "./ui";
 
 // Recharts is heavy: keep it off the critical path of the Today tab.
 const TrendsScreen = dynamic(
@@ -40,6 +40,29 @@ function tabFromHash(): Tab {
   return (TABS.find((t) => t.id === h)?.id ?? "today") as Tab;
 }
 
+/** App-wide providers: OS reduced-motion for every Motion animation, and toasts on every screen. */
+function Frame({ children }: { children: ReactNode }) {
+  return (
+    <MotionConfig reducedMotion="user">
+      {children}
+      <Toaster
+        position="top-center"
+        offset="calc(env(safe-area-inset-top) + 8px)"
+        mobileOffset={{ top: "calc(env(safe-area-inset-top) + 8px)" }}
+        toastOptions={{
+          style: {
+            background: "var(--card-2)",
+            color: "var(--label)",
+            border: "none",
+            borderRadius: "14px",
+            fontSize: "15px",
+          },
+        }}
+      />
+    </MotionConfig>
+  );
+}
+
 export function AppShell() {
   const settings = useSettings();
   const [tab, setTab] = useState<Tab>("today");
@@ -62,6 +85,11 @@ export function AppShell() {
   }, []);
 
   useEffect(() => {
+    const t = setTimeout(preloadSheet, 2000);
+    return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
     if (settings) setHapticsEnabled(settings.haptics);
   }, [settings]);
 
@@ -80,76 +108,67 @@ export function AppShell() {
   }
 
   if (!settings.onboarded) {
-    return <Onboarding />;
+    return (
+      <Frame>
+        <Onboarding />
+      </Frame>
+    );
   }
 
   return (
-    <div className="flex h-dvh flex-col overflow-hidden">
-      <main
-        ref={scroller}
-        className="pt-safe no-scrollbar flex-1 overflow-y-auto overscroll-contain"
-      >
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div
-            key={tab}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.12 }}
-            className="mx-auto max-w-[520px] pb-8"
-          >
-            {tab === "today" && <TodayScreen onNavigate={go} />}
-            {tab === "trends" && <TrendsScreen />}
-            {tab === "learn" && <LearnScreen />}
-            {tab === "settings" && <SettingsScreen />}
-          </motion.div>
-        </AnimatePresence>
-      </main>
+    <Frame>
+      <div className="flex h-dvh flex-col overflow-hidden">
+        <main
+          ref={scroller}
+          className="pt-safe no-scrollbar flex-1 overflow-y-auto overscroll-contain"
+        >
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={tab}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.12 }}
+              className="mx-auto max-w-[520px] pb-8"
+            >
+              {tab === "today" && <TodayScreen onNavigate={go} />}
+              {tab === "trends" && <TrendsScreen />}
+              {tab === "learn" && <LearnScreen />}
+              {tab === "settings" && <SettingsScreen />}
+            </motion.div>
+          </AnimatePresence>
+        </main>
 
-      <nav
-        aria-label="Tabs"
-        className="pb-safe shrink-0 border-t border-separator bg-tabbar backdrop-blur-xl"
-      >
-        <div className="mx-auto grid h-[49px] max-w-[520px] grid-cols-4">
-          {TABS.map(({ id, label, icon: Icon }) => {
-            const active = id === tab;
-            return (
-              <button
-                key={id}
-                type="button"
-                onClick={() => go(id)}
-                aria-current={active ? "page" : undefined}
-                className={cx(
-                  "flex flex-col items-center justify-center gap-0.5 text-[10px] font-medium",
-                  active ? "text-accent" : "text-label-3",
-                )}
-              >
-                <Icon
-                  size={24}
-                  strokeWidth={active ? 2.2 : 1.8}
-                  fill={active && id === "today" ? "currentColor" : "none"}
-                />
-                {label}
-              </button>
-            );
-          })}
-        </div>
-      </nav>
-
-      <Toaster
-        position="top-center"
-        offset="calc(env(safe-area-inset-top) + 8px)"
-        mobileOffset={{ top: "calc(env(safe-area-inset-top) + 8px)" }}
-        toastOptions={{
-          style: {
-            background: "var(--card-2)",
-            color: "var(--label)",
-            border: "none",
-            borderRadius: "14px",
-            fontSize: "15px",
-          },
-        }}
-      />
-    </div>
+        <nav
+          aria-label="Tabs"
+          className="pb-safe shrink-0 border-t border-separator bg-tabbar backdrop-blur-xl"
+        >
+          <div className="mx-auto grid h-[49px] max-w-[520px] grid-cols-4">
+            {TABS.map(({ id, label, icon: Icon }) => {
+              const active = id === tab;
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => go(id)}
+                  aria-current={active ? "page" : undefined}
+                  className={cx(
+                    "flex flex-col items-center justify-center gap-0.5 text-[10px] font-medium",
+                    active ? "text-accent" : "text-label-3",
+                  )}
+                >
+                  <Icon
+                    size={24}
+                    strokeWidth={active ? 2.2 : 1.8}
+                    fill={active && id === "today" ? "currentColor" : "none"}
+                  />
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+        </nav>
+      </div>
+    </Frame>
   );
 }

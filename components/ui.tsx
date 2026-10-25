@@ -3,8 +3,8 @@
 // Shared iOS-style primitives. Screens compose these; only tokens, no hex.
 import { ChevronRight } from "lucide-react";
 import { motion } from "motion/react";
-import type { ReactNode } from "react";
-import { Drawer } from "vaul";
+import dynamic from "next/dynamic";
+import { type ReactNode, useEffect, useState } from "react";
 
 export function cx(...c: (string | false | null | undefined)[]) {
   return c.filter(Boolean).join(" ");
@@ -158,7 +158,8 @@ export function Segmented<T extends string>({
             aria-selected={active}
             onClick={() => onChange(o)}
             className={cx(
-              "relative h-8 text-footnote font-semibold",
+              // 32px pill like iOS, with a 44px hit area.
+              "relative h-8 text-footnote font-semibold before:absolute before:-inset-y-1.5 before:inset-x-0 before:content-['']",
               active ? "text-label" : "text-label-2",
             )}
           >
@@ -256,7 +257,7 @@ export function Toggle({
       aria-label={label}
       onClick={() => onChange(!checked)}
       className={cx(
-        "relative h-[31px] w-[51px] shrink-0 rounded-full transition-colors duration-200",
+        "relative h-[31px] w-[51px] shrink-0 rounded-full transition-colors duration-200 before:absolute before:-inset-2 before:content-['']",
         checked ? "bg-success" : "bg-card-3",
       )}
     >
@@ -269,37 +270,32 @@ export function Toggle({
   );
 }
 
-/** Bottom sheet (Vaul) styled like an iOS sheet. */
-export function Sheet({
-  open,
-  onOpenChange,
-  title,
-  children,
-}: {
+const SheetImpl = dynamic(
+  () => import("./SheetImpl").then((m) => m.SheetImpl),
+  { ssr: false },
+);
+
+/** Warms the sheet chunk so the first open feels instant. */
+export function preloadSheet() {
+  import("./SheetImpl");
+}
+
+/**
+ * Bottom sheet styled like an iOS sheet. Vaul loads on first open, keeping it
+ * off the launch path.
+ */
+export function Sheet(props: {
   open: boolean;
   onOpenChange: (o: boolean) => void;
   title: string;
   children: ReactNode;
 }) {
-  return (
-    <Drawer.Root open={open} onOpenChange={onOpenChange}>
-      <Drawer.Portal>
-        <Drawer.Overlay className="fixed inset-0 z-40 bg-black/60" />
-        <Drawer.Content
-          aria-describedby={undefined}
-          className="fixed inset-x-0 bottom-0 z-50 flex max-h-[92dvh] flex-col rounded-t-[14px] bg-card outline-none"
-        >
-          <div className="mx-auto mt-2 h-[5px] w-9 shrink-0 rounded-full bg-card-3" />
-          <Drawer.Title className="px-4 pt-3 pb-2 text-center text-headline font-semibold">
-            {title}
-          </Drawer.Title>
-          <div className="pb-safe overflow-y-auto overscroll-contain px-4 pb-6">
-            {children}
-          </div>
-        </Drawer.Content>
-      </Drawer.Portal>
-    </Drawer.Root>
-  );
+  const [mounted, setMounted] = useState(props.open);
+  useEffect(() => {
+    if (props.open) setMounted(true);
+  }, [props.open]);
+  if (!mounted) return null;
+  return <SheetImpl {...props} />;
 }
 
 export function Button({
@@ -324,7 +320,7 @@ export function Button({
       transition={{ duration: 0.1 }}
       className={cx(
         "flex h-[50px] w-full items-center justify-center gap-2 rounded-[12px] text-headline font-semibold disabled:opacity-40",
-        variant === "primary" && "bg-accent text-label",
+        variant === "primary" && "bg-accent-strong text-label",
         variant === "secondary" && "bg-card-2 text-accent",
         variant === "plain" && "text-accent",
         className,

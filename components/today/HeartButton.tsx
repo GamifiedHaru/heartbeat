@@ -90,7 +90,6 @@ export function HeartButton({
       {bursts.map((b) =>
         b.particles.map((p, i) => (
           <motion.span
-            // biome-ignore lint/suspicious/noArrayIndexKey: particles are static per burst
             key={`${b.id}-${i}`}
             aria-hidden
             className="pointer-events-none absolute text-accent"
@@ -126,6 +125,9 @@ export function HeartButton({
         onPointerLeave={clearHold}
         onPointerCancel={clearHold}
         onContextMenu={(e) => e.preventDefault()}
+        onKeyDown={() => {
+          held.current = false;
+        }}
         onClick={() => {
           if (held.current) {
             held.current = false;

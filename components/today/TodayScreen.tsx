@@ -1,13 +1,14 @@
 "use client";
 
-import { format, formatDistanceToNowStrict } from "date-fns";
+import { format, formatDistanceToNowStrict, startOfWeek } from "date-fns";
+import { useLiveQuery } from "dexie-react-hooks";
 import { ChartColumn, Clock, NotebookPen } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { formatMinutes, summarize } from "@/lib/analytics";
 import { logBeat } from "@/lib/beats";
-import { getSettings } from "@/lib/db";
-import { partnerName, useBeats, useNow, useSettings } from "@/lib/hooks";
+import { db, getSettings } from "@/lib/db";
+import { partnerName, useNow, useSettings } from "@/lib/hooks";
 import type { Tab } from "../AppShell";
 import { DailyInsightCard } from "../learn/DailyInsightCard";
 import { Card, CardHeader, cx } from "../ui";
@@ -28,7 +29,6 @@ function useAutoLogOnLaunch() {
     (async () => {
       const s = await getSettings();
       if (!s.autoLogOnOpen) return;
-      const { db } = await import("@/lib/db");
       const last = await db.beats.orderBy("at").last();
       if (last && Date.now() - last.at < 60_000) return;
       await logBeat({ source: "launch" });
@@ -58,15 +58,24 @@ function RollingNumber({ value }: { value: number }) {
 
 export function TodayScreen({ onNavigate }: { onNavigate: (t: Tab) => void }) {
   useAutoLogOnLaunch();
-  const beats = useBeats();
   const settings = useSettings();
   const now = useNow();
   const name = partnerName(settings);
-  const [sheet, setSheet] = useState<"new" | "edit" | null>(null);
+  const [sheet, setSheet] = useState<
+    { mode: "new" } | { mode: "edit"; id: number } | null
+  >(null);
+
+  // Only this week's beats: a tap re-reads a handful of rows, not the history.
+  const weekStart = startOfWeek(now, { weekStartsOn: 1 }).getTime();
+  const beats = useLiveQuery(
+    () => db.beats.where("at").aboveOrEqual(weekStart).sortBy("at"),
+    [weekStart],
+  );
+  const last = useLiveQuery(() => db.beats.orderBy("at").last(), []);
+  const total = useLiveQuery(() => db.beats.count(), []);
 
   const today = useMemo(() => summarize(beats ?? [], "D", now), [beats, now]);
   const week = useMemo(() => summarize(beats ?? [], "W", now), [beats, now]);
-  const last = beats?.at(-1);
   const lastIsRecent = last && now - last.at < 30 * 60_000;
   const minutes = formatMinutes(today.totalMinutes);
   const peakHour = Math.max(1, ...today.buckets.map((b) => b.count));
@@ -87,13 +96,18 @@ export function TodayScreen({ onNavigate }: { onNavigate: (t: Tab) => void }) {
         <HeartButton
           label={`Log a beat: I'm thinking of ${name}`}
           onTap={() => logBeat({ source: "tap" })}
-          onHold={() => setSheet("new")}
+          onHold={() => setSheet({ mode: "new" })}
         />
         <p className="px-8 pt-1 text-center text-subhead text-label-2">
           Tap whenever {name} crosses your mind.
-          <br />
-          <span className="text-label-3">Hold for a longer thought.</span>
         </p>
+        <button
+          type="button"
+          onClick={() => setSheet({ mode: "new" })}
+          className="mx-auto flex min-h-11 items-center px-4 text-subhead text-label-3 active:text-label-2"
+        >
+          Hold, or tap here, for a longer thought
+        </button>
       </div>
 
       <div className="grid grid-cols-3 gap-2 px-4 pt-6">
@@ -137,7 +151,9 @@ export function TodayScreen({ onNavigate }: { onNavigate: (t: Tab) => void }) {
           >
             <button
               type="button"
-              onClick={() => setSheet("edit")}
+              onClick={() =>
+                last?.id != null && setSheet({ mode: "edit", id: last.id })
+              }
               className="mt-2 flex h-11 w-full items-center justify-center gap-2 rounded-card bg-card text-subhead font-semibold text-accent active:bg-card-2"
             >
               <NotebookPen size={17} />
@@ -257,7 +273,7 @@ export function TodayScreen({ onNavigate }: { onNavigate: (t: Tab) => void }) {
           </div>
         </Card>
 
-        {beats && beats.length === 0 && (
+        {total === 0 && (
           <p className="px-4 pt-6 text-center text-footnote text-label-3">
             Your first beat starts the story. Everything stays on this phone.
           </p>
@@ -267,7 +283,7 @@ export function TodayScreen({ onNavigate }: { onNavigate: (t: Tab) => void }) {
       <ThoughtSheet
         open={sheet !== null}
         onOpenChange={(o) => !o && setSheet(null)}
-        editing={sheet === "edit" ? last : undefined}
+        editId={sheet?.mode === "edit" ? sheet.id : undefined}
         defaultMinutes={settings?.minutesPerBeat ?? 1}
         partner={name}
       />

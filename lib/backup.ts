@@ -72,6 +72,11 @@ function strRecord(v: unknown): v is Record<string, string> {
   );
 }
 
+/** Identity of a beat for merging: same moment, length, note and mood. */
+function beatKey(b: Omit<Beat, "id">) {
+  return `${b.at}:${b.minutes}:${b.note ?? ""}:${b.mood ?? ""}`;
+}
+
 function fail(error: string): ValidateResult {
   return { ok: false, error };
 }
@@ -214,21 +219,23 @@ export async function importData(
         await db.quizResults.clear();
         await db.settings.put({ ...backup.settings, key: "me" });
       } else {
-        for (const b of await db.beats.toArray()) {
-          seen.add(`${b.at}:${b.minutes}`);
-        }
+        for (const b of await db.beats.toArray()) seen.add(beatKey(b));
         for (const q of await db.quizResults.toArray()) {
           quizSeen.add(`${q.quizId}:${q.at}`);
         }
         const cur = await db.settings.get("me");
         if (!cur) await db.settings.put({ ...backup.settings, key: "me" });
       }
-      const beats = backup.beats.filter((b) => {
-        const k = `${b.at}:${b.minutes}`;
-        if (seen.has(k)) return false;
-        seen.add(k);
-        return true;
-      });
+      // Replace restores the backup exactly; merge skips beats already here.
+      const beats =
+        mode === "replace"
+          ? backup.beats
+          : backup.beats.filter((b) => {
+              const k = beatKey(b);
+              if (seen.has(k)) return false;
+              seen.add(k);
+              return true;
+            });
       const quizResults = backup.quizResults.filter((q) => {
         const k = `${q.quizId}:${q.at}`;
         if (quizSeen.has(k)) return false;
