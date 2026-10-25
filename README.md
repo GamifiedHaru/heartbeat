@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Heartbeat
 
-## Getting Started
+A small, private iPhone web app. Tap the heart each time you think of your partner; each thought is a beat. Heartbeat turns those beats into calm, Apple Health style trends, and offers short, research-backed lessons and quizzes.
 
-First, run the development server:
+All data lives only on your phone (IndexedDB). There are no accounts, no analytics and no network calls after the first load. Use Settings, then Export backup, to keep a copy.
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev          # http://localhost:3000
+pnpm build        # static export to out/ plus the offline service worker
+npx vitest run    # tests
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Install on iPhone
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Open the deployed address in Safari.
+2. Tap Share, then Add to Home Screen.
+3. Open Heartbeat from the new icon. It works offline afterwards. Tip: put the icon in your Dock.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy to GitHub Pages
 
-## Learn More
+1. Create a new GitHub repository (for example `heartbeat`).
+2. Push this project to its `main` branch.
+3. In the repo, go to Settings, then Pages, and set Source to GitHub Actions.
+4. The workflow in `.github/workflows/deploy.yml` builds with `NEXT_PUBLIC_BASE_PATH=/<repo>` and publishes. Your app appears at `https://<user>.github.io/<repo>/`.
 
-To learn more about Next.js, take a look at the following resources:
+To build for a sub-path locally: `NEXT_PUBLIC_BASE_PATH=/heartbeat pnpm build`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Note: data is stored per web address. If you move the app to a new address, export a backup first and import it there.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Icons
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit `public/icons/icon.svg`, then run `pnpm icons` to regenerate the PNGs.
